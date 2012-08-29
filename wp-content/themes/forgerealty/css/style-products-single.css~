@@ -1,0 +1,23 @@
+div.content div.product
+{  width:   60%;
+   float:   right;
+}
+
+   div.content div.product h2.alignleft
+   {  width:   100%;
+   }
+   
+      div.content div.product h2.alignleft   a
+      {  float:   right;
+      }
+
+div.product_detail   form
+{  float:   right;
+   margin:  auto auto 20px 20px;  
+   width:   30%;
+}
+
+div.product_detail   h4
+{  padding:    0px   10%  10px  0px;
+   text-align: right;
+}

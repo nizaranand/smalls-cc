@@ -1,0 +1,54 @@
+/*
+Syntax error: Invalid CSS after "@import	": expected uri, was "url	(	'page-fro..."
+        on line 15 of wp-content/themes/feed-me-seymour/style.scss
+
+10: License: GNU General Public License v2.0
+11: License URI: http://www.gnu.org/licenses/gpl-2.0.html
+12: 
+13: */
+14: 
+15: @import	url	(	'page-front.scss'	);
+16: 
+17: /* Basic Tag Elements */
+18: 
+19: $colPrimary:		#221F20;
+20: $colSecondary:		#6FA537;
+
+Backtrace:
+wp-content/themes/feed-me-seymour/style.scss:15
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:1010:in `expected'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:956:in `expected'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:951:in `tok!'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:286:in `import_arg'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:937:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:937:in `expr!'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:278:in `import_directive'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:277:in `loop'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:277:in `import_directive'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:153:in `send'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:153:in `special_directive'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:126:in `directive'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:480:in `block_child'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:470:in `block_contents'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:58:in `stylesheet'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/scss/parser.rb:27:in `parse'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/engine.rb:327:in `_to_tree'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/engine.rb:300:in `_render'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/engine.rb:247:in `render'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/plugin/compiler.rb:340:in `update_stylesheet'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/plugin/compiler.rb:202:in `update_stylesheets'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `each'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/plugin/compiler.rb:200:in `update_stylesheets'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/plugin.rb:81:in `update_stylesheets'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/exec.rb:411:in `watch_or_update'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/exec.rb:302:in `process_result'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/exec.rb:41:in `parse'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
+/usr/lib64/ruby/gems/1.8/gems/sass-3.1.19/bin/sass:8
+/usr/bin/sass:19:in `load'
+/usr/bin/sass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@import	\": expected uri, was \"url	(	'page-fro...\"\A         on line 15 of wp-content/themes/feed-me-seymour/style.scss\A \A 10: License: GNU General Public License v2.0\A 11: License URI: http://www.gnu.org/licenses/gpl-2.0.html\A 12: \A 13: */\A 14: \A 15: @import	url	(	'page-front.scss'	);\A 16: \A 17: /* Basic Tag Elements */\A 18: \A 19: $colPrimary:		#221F20;\A 20: $colSecondary:		#6FA537;"; }

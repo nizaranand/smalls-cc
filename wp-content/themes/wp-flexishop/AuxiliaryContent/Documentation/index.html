@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>WP FlexiShop Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;WP FlexiShop&rdquo; Documentation by &ldquo;Saxon Fletcher&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;WP FlexiShop&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 02/11/2010<br>
+					By: Saxon Fletcher<br>
+					Email: <a href="mailto:saxon@extradollop.com.au">saxon@extradollop.com.au</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/USERNAME">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#wordsettings">Wordpress Settings</a></li>
+			<li><a href="#ecomsettings">WP E-Commerce Settings</a></li>
+			<li><a href="#themelayouts">Theme Layouts</a></li>
+			<li><a href="#themeoptions">Theme Options Page</a></li>
+				<ul>
+					<li><a href="#generaloptions">General Options</a></li>
+					<li><a href="#slider">Homepage Feature Slider</a></li>
+					<li><a href="#homepage">Homepage</a></li>
+					<li><a href="#footer">Footer</a></li>
+					<li><a href="#branding">Branding and Background Colors</a></li>
+					<li><a href="#fontcolors">Font Colors</a></li>
+					<li><a href="#fontfamily">Font Family</a></li>
+				</ul>
+			<li><a href="#promotions">Promotions</a></li>
+			<li><a href="#featured">Featured Products and Posts</a></li>
+			<li><a href="#homeslider">Homepage Slider</a></li>
+			<li><a href="#widgets">Widgets</a></li>
+			<li><a href="#changeback">Changing Background</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#cssFiles">CSS Structure</a></li>
+			<li><a href="#gold">Gold Cart</a></li>
+			<li><a href="#javascript">Javascript</a></li>
+			<li><a href="#resources">Resources</a></li>
+			<li><a href="#furthersupport">Further Support</a></li>
+		
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>Installation</strong> - <a href="#toc">top</a></h3>
+		<p class="notice">For detailed Wordpress installation instructions visit <a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a></p>
+		<p class="notice">For detailed WP E-commerce installation instructions or for more information visit <a href="http://wordpress.org/extend/plugins/wp-e-commerce/installation/">http://wordpress.org/extend/plugins/wp-e-commerce/installation/</a> </p>
+		<p>For this theme to work correctly you will need to install the wp e-commerce plugin linked here. You can install and activate this plugin like any other Wordpress plugin, download the zip file, extract into the plugins directory, and install via the Wordpress admin area.</p>  
+		
+		<p>There are two parts to this theme, the basic Wordpress theme, and the Wp E-commerce theme. Make sure you install the wp-ecommerce plugin before going any further.</p>
+		
+		<h4>Steps</h4>
+		<ul>
+		<li>Download zip file.</li>
+<li>Extract to computer</li>
+<li>Upload folder "wp-content" to wordpress root directory, <strong>merge</strong> any changes.</li>
+<li>Active wordpress theme under appearance->themes</li>
+<li>Activate wp e-commerce theme under store->settings->presentation->theme</li>
+</ul>
+
+<p>Once you have activated both themes you will need to change some of the page and media settings for optimal performance.</p>
+		
+		<p class="error">The theme uses timthumb.php to resize slider images. For this reason you should ensure there is a /cache/ folder located in wp-content/flexishop/ theme folder. This folder should have write-permissions, if you run into problems you can try and manually change the permissions to 777. The containing folder should also have permissions of 777. For more information visit the timthumb homepage at <a href="http://www.darrenhoyt.com/2008/04/02/timthumb-php-script-released/">http://www.darrenhoyt.com/2008/04/02/timthumb-php-script-released/</a> </p>
+		<hr>
+
+		<h3 id="wordsettings"><strong>Wordpress Settings</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You will need to change a few settings for the homepage and shop to display correctly. Follow the steps below and you will be adding content in no time.</p>
+		
+		<ol>
+			<li>Create a page called "Homepage" and set the page template (under page attributes) to Frontpage.<img src="assets/images/pagetemplate.png" alt="page template" /></li>
+			
+			<li>Create a page called "Latest News (or whatever you want your blog called)" and leave the page template as default</li>
+			<li>Go to Settings -> Reading, and change the "Front page displays" setting to "A static page", set the front page to your homepage, and posts page to the blog page you just created.</li>
+			<li>Once you install the WP E-commerce plugin you will notice it would of created a products page with 3 children pages. For the product page set the page template to "Store", for the checkout, transaction results, and your account pages, set the page template to "Checkout". </li>
+			<li>Go to Settings -> Media and change the thumbnail size to Width:150 and Height:150, change the medium size to Max Width: 690 and Max Height: whatever you want. </li>
+		</ol>  
+		<p class="notice">You may find you will have trouble uploading larger files, in some cases this is due to a php memory limit and you will need to speak with your host. In other cases simply changing your "Large Size" in media settings to a large amount will fix the problem</p>
+
+		<hr>
+		
+		<h3 id="ecomsettings"><strong>WP E-Commerce Settings</strong> - <a href="#toc">top</a></h3>
+
+		<p>A lot of the wp e-commerce settings are optional, for example breadcrumbs and category images, however there are a few presentation settings you should change to make sure everything works hunky dory. </p>  
+		
+		<h4>Settings</h4>
+		<ul>
+<li>Theme: FlexiShop</li>
+<li>Product Groups/Products Display: Product Groups Only (All Products Displayed)</li>
+<li>Shopping Cart Settings: Widget</li>
+<li>Use Sliding Cart: Yes</li>
+<li>Default Product Thumbnail Size: Height(244), Width(244)</li>
+<li>Default Product Group Thumbnail Size: Height(200), Width(200)</li>
+<li>Single Product Image Size: Height(500), Width(550)</li>
+<li>Use Pagination: Yes</li>
+<li>Page Number Position: Bottom</li>
+<li>Use Intense Debate Comments: No</li>
+</ul>
+
+<img src="assets/images/ecomsettings.jpg" alt="promotion feature image" />
+		<hr>
+		
+				
+		<h3 id="themelayouts"><strong>Theme Layouts</strong> - <a href="#toc">top</a></h3>
+
+		<p>The theme has three different layouts for you to switch between. Each layout has the ability to change the background, fonts and content. </p>
+		
+		<h4>Simple Layout</h4>
+		<p>The simple layout is elegant and sophisticated by default, yet though a basic background change and a few color swaps, you can change the entire look to suit your business and brand.</p>
+		
+		<h4>Full Layout</h4>
+		<p>The full layout adds a changeable footer and header area to inject a bit of color into the design. You can even add a background image to the slider area for unlimited possibilities (e.g. a new background for each season).</p>
+		
+		<h4>Boxed Layout</h4>
+		<p>The boxed layout is the safest choice when customising the theme. Add a background color or image, swap out fonts, for a completely different look.</p>
+		
+		<hr>
+		
+		<h3 id="themeoptions"><strong>Theme Options</strong> - <a href="#toc">top</a></h3>
+		<img src="assets/images/themeoptions.jpg" alt="theme options" /><br />
+		<h4 id="generaloptions">General Options</h4>
+		<ul>
+		<li><strong>Overall Theme Layout:</strong> Change Layout Type</li>
+		<li><strong>About Us:</strong> used in footer area.</li>
+		<li><strong>Product Overview:</strong>  used on homepage, if left empty nothing will be displayed.</li>
+		<li><strong>Copyright Text:</strong> used in footer.</li>
+		<li><strong>Site Logo:</strong> upload your logo, if no logo is present then site name will be used.</li>
+		</ul>
+		
+		<h4 id="slider">Homepage Feature Slider</h4>
+		<ul>
+			<li><strong>Homepage Slider Content:</strong> you can define what is included in the homepage slider. Options include featured products, featured posts, and promotions.</li>
+			<li><strong>Slider Transition Effect:</strong> There are currently two transition effects, fade and horizontal slide. More will be added!</li>
+			<li><strong>Full Layout → Front Page Slider Background Setting:</strong> Choose the type of background you want for the homepage slider, options include default, background image, and basic color.</li>
+			<li><strong>Front Page Slider Background:</strong> If background image is chosen for slider background, then you will be given the ability to upload a background image from your computer.</li>
+			<li><strong>Slider Background Position:</strong> Where the background image should be positioned.</li>
+			<li><strong>Slider Background Repeat:</strong> How and if the background should be tiled.</li>
+		</ul>
+		
+		<h4 id="homepage">Homepage</h4>
+		<ul>
+			<li><strong>Homepage Content:</strong> You can choose what content should be displayed on the homepage, options include latest products, best sellers, categories.</li>
+		</ul>
+		
+		<h4 id="footer">Footer</h4>
+		<ul>
+			<li><strong>Footer Content:</strong> There are two sections to the footer, both are widgetised areas and you can choose to include one, both, or none. The top section also includes the latest news section of the site.</li>
+		</ul>
+		
+		<h4 id="branding">Branding and Background Colors</h4>
+		<ul>
+			<li><strong>Body Background:</strong> Change the background of site, there are three options available, default, use image, use color. If use image is chosen, you can still choose a background color, it will simply be used to fill in the gaps around the background image.</li>
+<li><strong>Background Color:</strong> As mentioned above you can change the background color, also used when an background image is in place. To pick a color, click inside the text field and a color wheel will pop up, browse through the colors or enter the hexidecimal value, then click the color picker button located in the bottom right corner.<img src="assets/images/colorpicker.jpg" alt="color picker" /></li>
+<li><strong>Full Layout → Footer Background color:</strong> Change the color of the footer area in the full layout.</li>
+<li><strong>Full Layout → Header Color:</strong> Change the color of the header area when using the full layout. This color will also be used as the slider background color on the homepage.</li>
+<li><strong>Boxed → Copyright Background Color:</strong> Change the color of the copyright section, which is located below the box in the boxed layout.</li>
+		</ul>
+		
+		<h4 id="fontcolors">Font Colors</h4>
+		<p>Used to change the colors of a variety of text types in the site.</p>
+		
+		<h4 id="fontcolors">Font Family</h4>
+		<p>Choose from a selection of 24 fonts using a combination of Google Font API and hand selected fonts. All header fonts use the accessible @font-face as a way of replacing fonts. More fonts will be added by request.</p>
+		
+		<hr>
+				
+		<h3 id="promotions"><strong>Promotions</strong> - <a href="#toc">top</a></h3>
+
+		<p>Promotions are a custom post type which were made to be used as a way of displaying current sales, special deals, or even just a featured product. In fact, they can be used for pretty much anything! You have the option for the promotion to be linked to a product, a category or a custom link, its completely up to you! Just upload an image using the “Set Featured” section at the appropriate width (980 by 375, larger images will be cropped down to fit), and bobs your uncle!</p>
+		
+		<img src="assets/images/sliderscreen.jpg" alt="promotion feature image" />
+		<img src="assets/images/featureimage.jpg" alt="promotion feature image" />
+		
+		<hr>
+		
+		<h3 id="featured"><strong>Featured Products and Posts</strong> - <a href="#toc">top</a></h3>
+
+		<p>Featured products and posts are added through the slider post type mentioned below.</p>
+
+		<hr>
+		
+		<h3 id="homeslider"><strong>Homepage Slider</strong> - <a href="#toc">top</a></h3>
+
+		<p>The homepage slider uses a selection of content which you can define in the theme settings. Images for both promotions and featured posts are pulled from the “Set Featured” section when creating a post. For best performance each image should be 980 width by 375 height, however larger images will be cropped automatically so no need to stress.</p>
+		
+		<p>To create a new slider, simple login to your admin panel, and click on add new slider in the left hand menu. From hear you can choose the type of slider (featured product, featured post, featured promotion) and the actual slider content. Once done, click on publish, and your slide will magically appear on the homepage. </p>
+		<img src="assets/images/featureslider.jpg" alt="homepage slider content" />
+		<hr>
+		
+		<h3 id="changeback"><strong>Changing Background</strong> - <a href="#toc">top</a></h3>
+
+		<p>To change the background image, login to wordpress admin and go to appearance->background, upload an image using the upload button and select your tiling settings. You can view a preview of your background in the preview square located at the top of the page.</p>
+		<img src="assets/images/background.jpg" alt="background image" />
+		<hr>
+		
+		<h3 id="widgets"><strong>Widgets</strong> - <a href="#toc">top</a></h3>
+
+		<p>There are a total of 12 widget areas which you can use to add your own content and functionality. There are two in the sidebar, two in top footer area, five in the lower footer area, and three on the homepage. The homepage widget areas are great for adding text and images using a text widget, if no homepage widgets are set, this area will remain blank and won't effect the design.</p>
+		<hr>
+		
+		<h3 id="menu"><strong>Primary Menu</strong> - <a href="#toc">top</a></h3>
+
+		<p>The theme uses the menu feature under "appearance" to create the primary menu. However if no menu is chosen then all pages will be included in the primary navigation</p>
+		<hr>
+		
+		<h3 id="cssFiles"><strong>CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>This theme uses one main css file along with a css file for each of the individual layouts. Style.css controls all common elements whilst boxedlayout.css, and fulllayout.css control layout specific elements </p>
+		
+		<hr>
+		
+		<h3 id="gold"><strong>Gold Cart Support</strong> - <a href="#toc">top</a></h3>
+
+		<p>WP FlexiShop supports features of the wp e-commerce gold cart plugin. Features include multi-image support and product search. There is no need to switch to Grid View as this is naturally built into the theme.</p>
+		<p><strong>Multiple Images -</strong> To enable multiple images, go to store->settings->presentation and make sure "Show Thumbnail Gallery" is set to yes.</p>
+		<p><strong>Product Search -</strong> To enable product search, go to store->settings->presentation and make sure "Show Search" is set to yes, there is no reason to turn on advanced search as there is only one view for products.</p>
+		<hr>
+		
+		<h3 id="javascript"><strong>JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme utilises the jQuery framework and imports a number of custom and 3rd party scripts .</p>
+		<h4>Public Site</h4>
+		<ul>
+			<li><strong>jQuery Easing (jquery.easing.1.3.js)</strong> - which is used for all transition effects</li>
+			<li><strong>jQuery bxSlider (jquery.bxSlider.min.js)</strong> - created by Steven Wanderski, this wonderful plugin controls all sliding elements in the site, you can find more information at <a href="http://bxslider.com/">http://bxslider.com/</a></li>
+			<li><strong>initiate.js</strong> - This is a custom file which basically sets up all jQuery event handlers and functions</li>
+		</ul>
+		
+		<h4>Admin Scripts</h4>
+		<ul>
+			<li><strong>jQuery Color Picker (admin/colorpicker.js)</strong> - this script is used to control all color picker fields within the theme options page. More information at <a href="http://www.eyecon.ro/colorpicker/">http://www.eyecon.ro/colorpicker/</a></li>
+			<li><strong>jQuery Date Input (admin/jquery.date_input.min.js)</strong> - this script controls all date fields and allows for easy date picking. Created by Jon Leighton at <a href="http://jonathanleighton.com/projects/date-input">http://jonathanleighton.com/projects/date-input</a></li>
+			<li><strong>Custom Admin Script (admin.js)</strong> - a custom script to initiate all event handlers and control the showing/hiding of various dependant fields</li>
+		</ul>
+		  
+		<hr>
+		
+		<h3 id="resources"><strong>Resources</strong> - <a href="#toc">top</a></h3>
+
+		<p>This theme uses a number of resources developed by the web community. The theme is based on the popular Starkers Theme by Elliot Jay Stock <a href="http://www.starkerstheme.com/">http://www.starkerstheme.com/</a></p>
+		<ul>
+			<li><a href="http://bxslider.com/">bxSlider</a></li>
+			<li><a href="http://www.eyecon.ro/colorpicker/">jQuery ColorPicker</a></li>
+			<li><a href="http://jonathanleighton.com/projects/date-input">Date Input</a></li>
+			<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing Plugin</a></li>
+			<li><a href="http://jquery.com/">jQuery</a></li>
+		</ul>
+		<hr> 
+		
+		<h3 id="support"><strong>Further Support</strong> - <a href="#toc">top</a></h3>
+
+		<p>Once again, thank you so much for purchasing this theme. If you have any further questions be sure leave a comment using the themeforest comment area, and I will get back to you as soon as possible! I also accept requests, so if you have an idea, post a comment and and I will do my best to implement it as a free update.</p>
+		
+		<hr> 
+		
+		<p class="append-bottom alt large"><strong>Saxon Fletcher</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,53 @@
+------------------------------------
+RT-THEME 15 BY TOLGA CAN
+http://themeforest.net/user/stmcan
+
+Theme and company logo designed and html, js, css, php files coded by Tolga Can
+ftogacan@gmail.com
+-------------------------------------
+
+
+------------------------------------
+IMAGES AND ICONS 
+-------------------------------------
+
+- Stock Photos by Envato
+http://themeforest.net/page/asset_library
+- Icons By Andy Gongea
+http://www.graphicrating.com/2009/06/19/quartz-icon-pack
+- Social Media Vector & Custom Shape Icon Set
+http://lifetreecreative.com/icons/
+
+
+------------------------------------
+PLUGINS
+-------------------------------------
+1) jQuery http://jquery.com 
+jQuery is a Javascript library that greatly reduces the amount of code that you must write.
+
+2) jQuery Cycle - jQuery plugin http://malsup.com/jquery/cycle/
+Cylcle script on sliding gallery 
+
+3) script.js - Coded by Tolga Can
+Includes several functions
+
+4) jQuery Easing - jQuery plugin http://gsgd.co.uk/sandbox/jquery.easing.php
+Offers multiple easing options
+
+5) jQuery PrettyPhoto  jQuery plugin  http://www.no-margin-for-errors.com/projects/prettyPhoto-jquery-lightbox-clone/ 
+6) Cufon   http://wiki.github.com/sorccu/cufon/about 
+jQuery UI JavaScript Library
+
+7) jQuery Tools   http://flowplayer.org/tools/index.html 
+jQuery Tools jQuery Plugin
+
+8) jQuery Vertical Drop-Down Menu
+Copyright Lukasz Czerwinski
+http://codecanyon.net/item/jquery-vertical-dropdown-menu/161210
+
+9) jQuery Popeye
+Copyright (C) 2008 - 2010 Christoph Schuessler
+http://dev.herr-schuessler.de/jquery/popeye/
+
+10) Jquery Tweets
+http://tweet.seaofclouds.com/

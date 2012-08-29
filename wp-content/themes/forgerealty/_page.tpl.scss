@@ -1,0 +1,117 @@
+div.content
+{	a
+	{	color:	(	#ffffff
+				- $colSecondary
+			) * 2;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{	color:	$colTertiary;
+	}
+
+	div.breadcrumb
+	{	color:	(	#ffffff
+				- $colPrimary
+			) * 1.5;
+	}
+
+	span.smalls-contact
+	{	background:	$colTertiary;
+		color:		$colSecondary;
+	}
+	
+	ul.smalls-cities
+	{  float:      left;
+	   list-style: none;
+	   margin:     0px   0px   0px   0px;
+	   width:      20%;
+	}
+
+	div.smalls-foreclosures	
+	{	border:        2px   solid #000000;
+		border-radius: 15px;
+		float:         left;
+		height:        500px;
+		padding:      2% 2% 2% 2%;
+		margin:       0% 5% 5% 0%;
+		width:         40%;
+	}
+
+	div.smalls-foreclosures,
+	div.smalls-services
+   	{	h4
+		{	background:	$colSecondary;
+			border-radius:	12px;
+				border-bottom-left-radius:	0px;
+				border-bottom-right-radius:	0px;
+			color:		$colTertiary;
+			text-align:	center;
+	}	}
+   
+	div.smalls-services
+	{  border:        2px   solid #000000;
+	   border-radius: 15px;
+	   float:         left;
+	   height:        160px;
+	   margin:        0% 2% 2% 0%;
+	   width:         30%;
+   
+	}
+	
+	form.wpcf7-form
+	{	@include	margin;
+		@include	padding;
+				
+		background:	$colTertiary;
+		border:		$colSecondary
+				3px
+				ridge;
+			border-radius:	3px;
+		clear:		left;
+		color:		#000000;
+		float:		left;
+		margin-left:	0px;
+		width:		290px;
+
+		ul
+		{	width:	100%;
+
+			span.title
+			{	text-align:	left;
+			}
+
+			input,
+			select,
+			textarea
+			{	background:	$colSecondary;
+				color:		#000000;
+				width:	99%
+					- (	2 * $nPadding-Side	);
+	}	}	}	
+
+	iframe.mls
+	{	height:	700px;
+		width:	100%;
+}	}
+
+div.content,
+div.sidebar_content
+{  height:     1200px;
+   overflow-y: auto;
+}
+
+div.head_text  h2 a
+{  float:   right;
+}
+
+div.head_text  h2 span.smalls-contact,
+h2.alignleft   span.smalls-contact
+{	border-radius:    20px;
+	padding:          0px 10px 5px 10px;
+	text-align:       center;
+}

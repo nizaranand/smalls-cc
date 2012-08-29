@@ -1,0 +1,72 @@
+/*
+Theme Name: Spark Launch Framework
+Version: 1.0
+Author: Spark Launch
+Author URI: http://sparklaunch.com
+*/
+
+@import "_assets/css/reset.css";
+@import "_assets/css/master.css";
+
+body {
+	width: 960px;
+	margin: 20px auto;
+	font: normal 0.8em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom: 15px;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+.menu {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.menu li {
+	float: left;
+	margin-right: 20px;
+}
+
+.main {
+	width: 640px;
+	float: left;
+}
+
+.content {
+	margin-bottom: 30px;
+}
+
+.sidebar {
+	width: 280px;
+	float: right;
+}
+
+.sidebar .widget {
+	margin: 0 0 30px 0;
+	padding: 15px;
+	background-color: #f2f2f2;
+}
+
+.main .post {
+	margin-bottom: 30px;
+}
+
+.main .member,
+.testimonial {
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.member img {
+	float: left;
+	margin-right: 15px;
+}
+
+.member h3 {
+	font-size: 20px;
+}

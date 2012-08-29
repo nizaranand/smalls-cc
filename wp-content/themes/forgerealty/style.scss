@@ -1,0 +1,85 @@
+/*
+File Name: style.css
+Theme Name:  Forge Realty - RT-Theme 15
+Author: Tolga Can
+Version: 1.6
+Author URI: http://themeforest.net/user/stmcan
+Theme URI: http://themeforest.net/user/stmcan
+Description:   Theme designed by Tolga Can - <a href="http://themeforest.net/user/stmcan">stmcan</a>
+*/
+$colPrimary:	#3e7d8a;
+$colSecondary:	#a8b068;
+$colTertiary:	#ffffff;
+
+$nMargin-Vertical:	10px;
+$nMargin-Side:		2%;
+$nPadding-Vertical:	5px;
+$nPadding-Side:		2%;
+
+@mixin	margin
+{	margin:	0px
+		$nMargin-Side
+		0px
+		$nMargin-Side;
+}
+						
+@mixin	padding
+{	padding:	$nPadding-Vertical
+			$nPadding-Side
+			$nPadding-Vertical
+			$nPadding-Side;
+}
+
+@import	'css/style-frontpage.css';
+@import	'css/style-products-single.css';
+@import	'page.tpl.scss';
+@import	'sidebar.tpl.scss';
+
+/*	EDIT /css/style.css for the theme style	*/
+
+div.content
+{	background:	$colPrimary;
+	color:		$colTertiary;
+
+	div.smalls-services	h4,
+	div.smalls-foreclosures	h4
+	{	color:		#ffffff;
+		background:	$colSecondary;
+}	}
+
+div.content_top,
+div.content_bottom,
+#sidebar	div.sidebar_top,
+#sidebar	div.sidebar_bottom,
+div.slider_cover
+{	background:	url(	'./images/skin-forge.png'	);
+}
+
+div.content_bottom
+{	background-position:	100%
+				-113px;
+}
+
+div.content_top,
+div.slider_cover
+{	background-position:	100%
+				0px;
+}
+
+#sidebar	div.sidebar_bottom
+{	background-position:	0%
+				-122px;
+}
+
+#smalls-plugins
+{	position:	fixed;
+		left:		0px;
+		bottom:	0px;
+	
+	div.fb-like
+	{	float:	left;
+	}
+	
+	span.IN-widget
+	{	float:	left;
+}	}

@@ -1,0 +1,66 @@
+<div id='featured-slider'>
+<div id='feature-wrapper'>
+<div id='features'>
+<ul class='feature-list'>
+
+<?php
+$products		=	array();
+$promotions		=	array();
+$posts			=	array();
+$options			=	get_option(	'site_basic_options'	);
+$slider_query	=	new WP_Query(	'post_type=slider'	);
+
+$szSQL		=
+	"SELECT  *
+		FROM	wp_posts,
+				wp_terms,
+				wp_term_relationships
+	WHERE		wp_terms.name		=	'Slider'
+		AND	wp_terms.term_id	=	wp_term_relationships.term_taxonomy_id
+		AND	wp_posts.ID			=	wp_term_relationships.object_id";
+$arySliders	=	$wpdb	->	get_results	(	$szSQL,
+													OBJECT_K
+												);
+var_dump($arySliders);
+
+if	(	$slider_query	->	have_posts()	):
+while	(	$slider_query	->	have_posts()	):
+	$slider_query	->	the_post();
+	$postid			=	get_the_ID();
+	$custom			=	get_post_custom($postid); 
+	$slider_type	=	$custom['sliderType'][0];
+
+	if	(	$slider_type	==	'product'	)
+	{	$slider_id	=	$custom['sliderProductId'][0];
+		array_push	(	$products,
+							$slider_id
+						);
+	}	else	if	(	$slider_type	==	'news'	)
+	{	$slider_id	=	$custom[	'sliderPostId'	][	0	];
+		array_push	(	$posts,
+							$slider_id
+						);
+	}	else	if	(	$slider_type	==	'promotion'	)
+	{	$slider_id	=	$custom[	'sliderPromotionId'	][	0	];
+		array_push	(	$promotions,
+							$slider_id
+						);
+	}
+endwhile;
+endif;
+
+$postsString = implode(',', $posts);
+$productsString = implode(',', $products);
+$promotionsString = implode(',', $promotions);
+if(!empty($promotions)) getSliderPromotions($promotionsString);
+if(!empty($products)) getSliderProducts($productsString);
+if(!empty($posts)) getSliderPosts($postsString);						
+?>
+
+</ul>	</div>
+	<!-- <div class='feature-nav'>
+		<a href='#' class='previous'>Previous</a>
+		<a href='#' class='next'>Next</a>
+	</div> -->
+</div>	</div>
+<div id	=	'slider-controls'	>	</div>

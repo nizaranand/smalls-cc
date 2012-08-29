@@ -1,0 +1,225 @@
+#sidebar
+{	width:	240px;
+	margin:	0px
+		20px
+		0px
+		0px;
+	float:	left;
+
+
+	.sidebar_top
+	{	margin:		8px
+				0px
+				0px
+				0px;
+		background:	url(	./images/skin-default.png	);
+			background-position:	left
+						0px;
+			background-repeat:	no-repeat;
+		height:		26px;
+		display:	block;
+	}
+
+	.sidebar_content
+	{	background:	$colTertiary;
+		color:		$colSecondary;
+		padding:	0px
+				30px;
+		
+		.box a
+		{	color:	$colSecondary;
+
+			&:hover
+			{	color:#fff;
+				text-decoration:none !important;
+			}
+		}
+		
+		ul.contact_list a
+		{	text-decoration:underline !important;
+		}
+
+		#navigation
+		{	padding:	0px
+					0px
+					30px
+					0px;
+		
+			ul	li	a
+			{	color:		$colPrimary;
+				display:	block;
+				font-family:	'Oswald',
+						arial,
+						serif;
+
+				&:hover
+				{	color:	$colSecondary;
+	}	}	}	}
+
+
+	.sidebar_bottom
+	{	background:	url(	./images/skin-default.png	);
+			background-position:	left
+						-122px;
+			background-repeat:	no-repeat;
+		height:26px;
+		display:block;
+}	}
+
+	#navigation >
+	/* first level links */
+	#navigation, #navigation a{ 
+		color:#fff;
+		text-decoration:none;
+		font-size:14px;
+		line-height:100%;
+		display:block;
+	}
+
+	/* inacvtive - expandable items */
+	#navigation a.inactive{ 
+		background:url(../images/plusminus.png) right 3px no-repeat;
+	}
+	
+	/* acvtive - expanded items */
+	#navigation a.active{ 
+		background:url(../images/plusminus.png) right -32px no-repeat;
+	}	
+	
+	/* current page items and hover states */
+	#navigation a:hover, #navigation ul li.current_page_item a, #navigation ul li.current-menu-ancestor a{  
+		color:#9D9D9D;
+	}		
+
+	/* current page items and hover states */
+	#navigation ul li.current_page_item a:hover, #navigation ul li.current-menu-ancestor a:hover{  
+		color:#fff;
+	}
+	
+	#navigation ul ul li.current-menu-item a{
+		color:#D0D0D0;
+	}
+
+
+	#navigation ul{
+		padding:1px 0 0 0;
+		display:block;
+		margin:0;
+		list-style:none !important;
+	}
+	
+	/* First Level */
+	#navigation > ul{
+		background:url(../images/transparent-pixel.png) top repeat-x;
+	}
+
+	#navigation > ul > li{
+		background:url(../images/transparent-pixel.png) bottom repeat-x;
+		padding:10px 0 10px 0;
+	}
+	
+	#navigation ul li{
+		display:block;
+	}
+
+	/* Sub Levels */
+	#navigation  ul ul{
+		display:none;
+		margin:10px 0 0 0;
+	}	
+
+	#navigation ul ul li{
+		margin:0 0 0 0;
+		padding:5px 0 5px 0;
+	}
+
+	#navigation ul ul li a{
+		font-size:12px;
+		color:#C4C4C4;
+	}
+	
+	/* Third Level */
+	#navigation  ul ul ul{
+		margin:10px 0 0 0;
+		background:url(../images/transparent-pixel.png) repeat-y;
+	}	
+
+	#navigation ul ul ul li{
+		margin:0 0 0 10px;
+	}
+
+/* ----------------------------------------------------
+	SIDEBAR LIST WIDGETS
+------------------------------------------------------- */
+	
+	/* widget links */
+	.sidebar_content .box ul{
+		background:url(../images/transparent-pixel.png) top repeat-x;
+		margin:0 0 20px 0;
+		border:0;
+	}
+
+	.sidebar_content .box ul li{
+		background:url(../images/transparent-pixel.png) bottom repeat-x;
+		padding:10px 0;
+		line-height:120%;
+		border:0;
+	}
+	
+	.sidebar_content .box ul li a{
+		display:block;
+	}
+ 
+	/* sub levels */
+ 
+	.sidebar_content .box ul ul{ 
+		margin:10px 0 0 0;
+		padding:10px 0 0 0;
+	}
+	
+	.sidebar_content .box ul ul ul{
+		background:none;
+		margin:10px 0;
+		padding:0;
+	}
+
+	.sidebar_content .box ul ul li{
+		padding:0;
+		margin:0;
+	}	
+
+	.sidebar_content .box ul ul li a{
+		padding:4px 0;
+	}		
+
+	.sidebar_content .box ul li li{
+		background:url(../images/transparent-pixel.png) top repeat-x;
+	}
+
+	.sidebar_content .box ul li li{
+		background:none; 
+	}	
+
+	.sidebar_content .box ul li li a{
+		padding:5px 0 5px 15px;
+		background: url(../images/arrow.png) left 9px no-repeat;
+		color:#949494;
+	}	
+
+	.sidebar_content .box ul li li li a{
+		display:block;
+		padding:5px 0 5px 30px;
+		background: url(../images/arrow.png) 15px 9px no-repeat;
+	}
+
+	.sidebar_content .box ul li li li li a{
+		display:block;
+		padding:5px 0 5px 45px;
+		background: url(../images/arrow.png) 30px 9px no-repeat;
+	}
+
+	.sidebar_content .box ul li li li li li a{
+		display:block;
+		padding:5px 0 5px 60px;
+		background: url(../images/arrow.png) 45px 9px no-repeat;
+	}

@@ -1,0 +1,65 @@
+table.contact
+{	background-color: $colSecondary;
+	border-top:			2px	ridge $colTertiary;
+	color:				#ffffff;
+	height:				auto;
+		min-height: 20px;
+	position:			fixed;
+		bottom:  0px;
+		left:		0px;
+	text-align:			center;
+	vertical-align:	center;
+	width:				100%;
+	
+	a
+	{	color:	#000000;
+		display:	block;
+	
+		&:hover
+		{	text-decoration:	underline;
+	}	}
+	
+	td.secondary-colour
+	{	background-color:	$colTertiary;
+}	}
+
+#footer
+{  clear:	both;
+	float:	left;
+	font-size:  11px;
+	height:	auto;
+		min-height: 30px;
+	padding:	10px  0;
+	text-align: center;
+	width:	100%;
+	
+	a
+	{  color: #0077AA;
+}  }
+
+#menu-top-navigation
+{	@include		padding;
+
+	background:	#ffffff;
+	border-bottom:	2px	ridge	$colTertiary;
+	display:		inline;
+	height:		20px;
+	margin:		0px;
+	position:	fixed;
+		top:	0px;
+		left:	0px;
+	width:		100%;
+	
+	li
+	{	@include		padding;
+
+		display:		inline;
+		text-align:	center;
+		
+		a
+/*	jonathan@smalls.cc	2012 June 28
+	http://themeshaper.com/forums/topic/thematic-menus-wrapping-the-ltligt-in-the-ltagt
+-	remember to alter display properties as suggested in the above URI
+*/
+		{	@include	menu-link;
+}	}	}

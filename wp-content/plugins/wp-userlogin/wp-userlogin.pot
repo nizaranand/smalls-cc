@@ -1,0 +1,221 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-userlogin\n"
+"POT-Creation-Date: 2012-01-05 20:27:46+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: userlogin.php:39
+msgid "UserLogin"
+msgstr ""
+
+#: userlogin.php:40
+msgid "CSS Editor"
+msgstr ""
+
+#: userlogin.php:312
+msgid "UserLogin Options"
+msgstr ""
+
+#: userlogin.php:314
+msgid "Settings saved."
+msgstr ""
+
+#: userlogin.php:324
+msgid "Form Content Options"
+msgstr ""
+
+#: userlogin.php:326
+msgid "Login Form Name"
+msgstr ""
+
+#: userlogin.php:328
+msgid "Login Redirect Page"
+msgstr ""
+
+#: userlogin.php:330
+msgid "Logout Redirect Page"
+msgstr ""
+
+#: userlogin.php:337
+msgid "Personalization Options"
+msgstr ""
+
+#: userlogin.php:339
+msgid "Gravatars"
+msgstr ""
+
+#: userlogin.php:340
+msgid "Display Gravatar"
+msgstr ""
+
+#: userlogin.php:341
+msgid "Uses avatar settings set on the"
+msgstr ""
+
+#: userlogin.php:341
+msgid "Discussion Page"
+msgstr ""
+
+#: userlogin.php:343
+msgid "Welcome Message"
+msgstr ""
+
+#: userlogin.php:347
+msgid "Display Welcome Message"
+msgstr ""
+
+#: userlogin.php:349
+msgid "indicate current user with"
+msgstr ""
+
+#: userlogin.php:351
+msgid "Display Name"
+msgstr ""
+
+#: userlogin.php:354
+msgid "User ID"
+msgstr ""
+
+#: userlogin.php:355
+msgid "User Email"
+msgstr ""
+
+#: userlogin.php:356
+msgid "Following defaults to <strong>%user</strong> if profile info is blank"
+msgstr ""
+
+#: userlogin.php:357
+msgid "User First Name"
+msgstr ""
+
+#: userlogin.php:358
+msgid "User Last Name"
+msgstr ""
+
+#: userlogin.php:359
+msgid "User Full Name"
+msgstr ""
+
+#: userlogin.php:367
+msgid "Control Panel Content Options"
+msgstr ""
+
+#: userlogin.php:369
+msgid "Control Panel Name"
+msgstr ""
+
+#: userlogin.php:372
+msgid "Control Stylesheet"
+msgstr ""
+
+#: userlogin.php:373
+msgid "Use default stylesheet"
+msgstr ""
+
+#: userlogin.php:375
+msgid "Available Links"
+msgstr ""
+
+#: userlogin.php:376
+msgid "based on user role"
+msgstr ""
+
+#: userlogin.php:377 userlogin.php:571
+msgid "Dashboard"
+msgstr ""
+
+#: userlogin.php:378 userlogin.php:574
+msgid "New Post"
+msgstr ""
+
+#: userlogin.php:379 userlogin.php:577
+msgid "Edit Posts"
+msgstr ""
+
+#: userlogin.php:380
+msgid "Manage Themes"
+msgstr ""
+
+#: userlogin.php:381 userlogin.php:583
+msgid "Options"
+msgstr ""
+
+#: userlogin.php:382 userlogin.php:586
+msgid "Users"
+msgstr ""
+
+#: userlogin.php:383 userlogin.php:589
+msgid "Your Profile"
+msgstr ""
+
+#: userlogin.php:384 userlogin.php:593
+msgid "Logout"
+msgstr ""
+
+#: userlogin.php:387
+msgid "Extra Optional Links"
+msgstr ""
+
+#: userlogin.php:411
+msgid "Use <strong>rel=\"nofollow\"</strong> on links?"
+msgstr ""
+
+#: userlogin.php:417
+msgid "Save Changes"
+msgstr ""
+
+#: userlogin.php:440
+msgid "Edit WP-Userlogin CSS"
+msgstr ""
+
+#: userlogin.php:442
+msgid "Stylesheet Updated"
+msgstr ""
+
+#: userlogin.php:452
+msgid "Edit Stylesheet"
+msgstr ""
+
+#: userlogin.php:580
+msgid "Manage Theme"
+msgstr ""
+
+#: userlogin.php:590
+msgid "View Your Profile"
+msgstr ""
+
+#: userlogin.php:682
+msgid "Username"
+msgstr ""
+
+#: userlogin.php:683
+msgid "Password"
+msgstr ""
+
+#: userlogin.php:688
+msgid "OpenID"
+msgstr ""
+
+#: userlogin.php:695
+msgid "Remember Me"
+msgstr ""
+
+#: userlogin.php:696
+msgid "Log in"
+msgstr ""
+
+#: userlogin.php:699
+msgid "Register"
+msgstr ""
+
+#: userlogin.php:706
+msgid "Lost your password?"
+msgstr ""

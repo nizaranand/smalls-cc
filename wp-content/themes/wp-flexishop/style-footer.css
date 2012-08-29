@@ -1,0 +1,70 @@
+#footer
+{	background: #01b0a6;
+	clear:		both;
+	margin: 		0px auto;
+	padding: 	20px 0px;
+	color: 		#ffffff;
+	width:		100%;
+}
+
+	#footer	table,
+	#header	table
+/*	jonathan@smalls.cc	2012 February 28
+I was a little hesitant to mess with this class, because I like the way that it
+is styled. I decided to use a table rather than a P though, and I needed to
+recenter it.
+*/
+	{	line-height: normal;
+		letter-spacing: 2px;
+		text-align: center;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Arvo', serif;
+		font-weight: normal;
+		font-size: 10px;
+		margin-left:	23%;
+		width:			73%;
+	}
+	
+		#footer	table	td
+		{	padding-left:	5px;
+			padding-right:	5px;
+			text-align:		left;
+		}
+		
+		#footer	table	td	ul	li
+		{	border-bottom-color:	#ffffff;
+			border-bottom-style:	dotted;
+			border-bottom-width:	1px;
+		}
+
+img.affiliation
+{	background-color:	#ffffff;
+	border-color:		#ffffff;
+	border-width:		1px;
+	border-radius:		20px;
+	border-style:		solid;
+	height:				100px;
+	margin-top:			20px;
+	margin-left:		auto;
+	margin-right:		auto;
+	max-width:			25%;
+}
+
+a.footer,
+a.header
+{	color: 			#ffffff;
+	font-weight:	bold;
+}
+
+
+td.name,
+td.contact
+{	width:	15%;
+		min-width:	140px;
+}
+
+span.schedule
+{	float:	right;
+}

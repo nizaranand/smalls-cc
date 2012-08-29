@@ -1,0 +1,63 @@
+div.col-3
+{	background-color:	#ffffff;
+	border-style:		solid;
+	border-radius:		10px;
+	float:				left;
+	height:				600px;
+	margin-right:		1%;
+	padding:				15px;
+	width:				29%;
+}
+
+img.slide-background
+{	width:		100%;
+	position:	absolute;
+		top:	-20%;
+}
+
+div.slide-footer
+{	background-color:	#ffffff;
+	max-height:			110px;
+	overflow-y:			hidden;
+	padding:				10px	10px	10px	10px;
+	position:			absolute;
+		left:	0px;
+		top:	0px;
+	width:				100%;
+}
+
+	div.slide-footer	h2,
+	div.slide-footer	p
+	{
+	}
+
+div.textwidget	iframe
+{	border-radius:	10px;
+	height:			340px;
+	width:			100%;
+}
+
+div.textwidget	ol,
+div.textwidget	ul
+{	padding-left:	20px;
+	margin-bottom:	15px;
+}
+
+div.textwidget	ul
+{	font-size:	x-small;
+	list-style:	disc;
+}
+
+div.vendor
+{	background-color:	#ffffff;
+	border-radius:		10px;
+	padding:				20px;
+	position:			relative;
+		top:	-40px;
+	z-index:				-1;
+}
+	
+		div.vendor	img
+		{	margin:	10px	0px	10px	0px;
+			width:	140px;
+		}

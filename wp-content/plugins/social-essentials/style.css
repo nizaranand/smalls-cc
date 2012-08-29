@@ -1,0 +1,297 @@
+/**
+* styles for admin page plugin
+*/
+
+div.se_admin_page{
+    margin: 20px;
+    min-width: 1350px;
+    width: auto!important;
+    width: 1350px;
+}
+
+#se .words
+{
+  border:1px solid #000;			
+  height:25px;
+  width:50%;
+  padding:2px;
+}
+#se .labels
+{
+  width:180px;
+  float:left;
+  margin-top:10px;
+  line-height:30px;
+  padding-left:3px;
+}		
+#se .inputs
+{
+  margin-top:13px;
+  float:left;  
+}
+#se .inputs input[type="text"]
+{
+  width:200px;
+  height:25px;
+  border:1px solid #000;		  
+}
+#se .inputs span
+{
+  font-size:11px; 
+  font-weight:normal;
+  padding-left:5px;
+}
+#se p
+{
+  font-size:11px;
+  font-weight:normal;
+  margin:3px;
+}
+#se h4
+{
+  margin-bottom:3px;
+}
+.checkboxes-labels
+{
+  width:160px;
+  float:left;			
+}
+.checkboxes-labels label
+{
+  font-size:12px;
+  font-weight:bold;
+}
+.checkboxes-inputs p
+{
+  padding-bottom:6px;
+}
+.checkboxes-inputs p span
+{
+  padding-left:5px;
+}
+#se .btn-submit
+{
+  position:absolute;
+  left:0;
+  margin:10px 4px;
+  width:100px;
+  cursor:pointer;
+}
+.checkboxes-labels p
+{
+  padding-bottom:5px;
+}
+.checkboxes
+{
+	margin-top:20px;
+}		
+/**
+* style for frontend view emotion buttons
+*/	
+.buttons_wrapper
+{
+  height:25px;
+  margin:15px 0px;
+}
+.feb_button
+{
+  margin:0px 2px;
+  text-decoration:none !important;
+  color:#333 !important;
+  padding:3px 6px 3px 3px;
+  font-size:11px;
+  border:1px solid #F4BEFC;  
+  -moz-border-radius:5px;	
+  -webkit-border-radius:5px; 
+  -khtml-border-radius:5px; 
+  border-radius:5px;
+  cursor:pointer;
+}
+.feb_button:hover
+{
+  background:#F4BEFC;
+}
+.buttons_wrapper span
+{
+  font-size:11px;
+}
+.feb_button span
+{
+  background:none !important;
+}
+.feb_button span span
+{
+	margin:0px !important;
+}
+#se_sidebar{
+	width:30%;
+	float:right;
+}
+.se_options{
+	width:35%;
+	float:left;
+}
+#se fieldset{
+	border:1px solid #CCCCCC;
+	padding:5px;
+	margin:5px;
+}
+#se fieldset legend{
+	padding:0px 5px;
+	font-weight:bold;
+}
+.below-h2{padding:10px !important;}
+.se_button{width:auto; float:left; text-align:center;}
+.se_button_small{height:21px;}
+.se_button_large{height:65px;}
+.clear{clear:both;}
+.se_bold{font-weight:bold!important;}
+.se_italic{font-style:italic!important;}
+.se_underline{text-decoration:underline!important;}
+.call_to_action{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.call_to_action h1,
+.call_to_action h2,
+.call_to_action h3,
+.call_to_action h4,
+.call_to_action h5,
+.call_to_action h6{
+    font-family: Verdana,Tahoma,Arial!important;
+    padding: 0!important;
+}
+.call_to_action h1{
+    font-size: 2em!important;
+}
+.call_to_action h2{
+    font-size: 1.5em!important;
+}
+.call_to_action h3{
+    font-size: 1.17em!important;
+}
+.call_to_action h4{
+    font-size: 1em!important;
+}
+.call_to_action h5{
+    font-size: .83em!important;
+}
+.call_to_action h6{
+    font-size: .75em!important;
+}
+#se_show_buttons tr{
+	height:30px;
+	cursor:move;
+}
+.se_left, .se_float-left{
+	float:left;
+}
+.se_right, .se_float-right{
+	float:right;
+}
+.se_center{
+	margin:0px auto;
+	display:table;
+}
+
+.se_stats{
+border:1px solid #ccc;
+width:100%;
+}
+.se_stats tr td{border:1px solid #ccc;text-align:center; padding:2px;}
+.se_selected{text-decoration:none; font-weight:bold;}
+.se_preloader{background:url(icons/preloader.gif); width:36px; height:36px; display:block;clear:both;margin:5px;}
+
+.se_stats .se_titles td{font-weight:bold;}
+
+.feed_item{clear:both;}
+.feed_img{
+float: left;
+width: 60px;
+}
+.feed_content{
+height: 60px;
+overflow: hidden;
+padding: 20px 0 0 5px;
+}
+
+
+#se_call_to_action_more_arrows{
+	cursor:pointer;
+	float:right;
+	margin-top: 8px;
+}
+#se_call_to_action_block_current_arrow{
+	width: 190px;
+	text-align: center;
+	height: 32px;
+	float: left;
+	padding: 5px 0;
+}
+#se_call_to_action_block_arrows{
+	width: 250px;
+	border: 1px solid #ccc;
+	padding: 10px 0;
+	display: none;
+}
+.se_call_to_action_image_arrow{
+	width: 125px;
+	float: left;
+	text-align: center;
+	padding: 5px 0;
+}
+.se_call_to_action_image_arrow img{
+	cursor: pointer;
+}
+
+
+#se_control input#se_reset_margin{
+    cursor: pointer;
+}
+#se_control div.se_control_title{
+    font-size: 11px;
+    height: 30px;
+    padding: 0 0 0 20px;
+}
+#se_control div.se_control_margins{
+    width: 180px;
+    float: left;
+    padding: 0 20px;
+}
+#se_control div.se_control_margins_top,
+#se_control div.se_control_margins_bottom{
+    height: 55px;
+    text-align: center;
+}
+#se_control div.se_control_margins_left_right div.se_control_margins_left{
+    float: left;
+}
+#se_control div.se_control_margins_left_right div.se_control_margins_right{
+    float: right;
+}
+#se_control div.se_control_margins input[type=text]{
+    width: 26px;
+}
+#se_control div.se_control_margins input[type=button]{
+    cursor: pointer;
+    width: 28px;
+}
+#se_control div.se_control_margins div.se_control_margins_top input[type=button]{
+    background: url(images/black_arrow_top.gif) no-repeat scroll center center transparent;
+}
+#se_control div.se_control_margins div.se_control_margins_right input[type=button]{
+    background: url(images/black_arrow_right.gif) no-repeat scroll center center transparent;
+}
+#se_control div.se_control_margins div.se_control_margins_bottom input[type=button]{
+    background: url(images/black_arrow_bottom.gif) no-repeat scroll center center transparent;
+}
+#se_control div.se_control_margins div.se_control_margins_left input[type=button]{
+    background: url(images/black_arrow_left.gif) no-repeat scroll center center transparent;
+}
+#se_control div.se_control_margins_top input[type=text]{
+    margin-left: 15px;
+}
+#se_control div.se_control_margins_bottom input[type=text]{
+    margin-left: 17px;
+}

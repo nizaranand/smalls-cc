@@ -1,0 +1,32 @@
+<?php
+$szSQL      =  "SELECT  wp_posts.ID,
+                        wp_postmeta.meta_key,
+                        wp_postmeta.meta_value
+               FROM     wp_posts,
+                        wp_postmeta
+               WHERE    wp_posts.post_type   =  'wpsc-product'
+               AND      wp_postmeta.post_id  =  wp_posts.ID
+               AND      wp_postmeta.meta_key =  '_wpsc_stock'
+               GROUP BY wp_postmeta.post_id";
+$aryPostIDs =  $wpdb -> get_results (  $szSQL,
+                                       OBJECT_K  
+                                    );
+var_dump (  $aryPostIDs );
+
+/*
+$szQuery =  "UPDATE  wp_postmeta
+            SET      meta_value  =  
+            WHERE    meta_key    =  '_wpsc_stock'";
+mysql_query (  $szQuery,
+               $bConnected
+            );
+*/
+?>
+
+http://teddyshoes.smalls.cc/wp-admin/post.php?post=4218&action=edit&_wpnonce=5f375f862c
+
+http://teddyshoes.smalls.cc/wp-admin/post.php?post=3&action=edit
+
+http://teddyshoes.smalls.cc/wp-admin/post.php?post=5&action=edit
+
+http://teddyshoes.smalls.cc/wp-admin/post.php?post=6&action=edit#
