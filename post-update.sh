@@ -1,3 +1,4 @@
 #!/bin/sh
 
-rsync	-rzu	*	jsmalls@sdf.org:~/html/smalls.cc/
+git reset	--hard
+rsync		-rzu	*	jsmalls@sdf.org:~/html/smalls.cc/
