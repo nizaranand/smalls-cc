@@ -1,0 +1,80 @@
+@import	'page-front.scss';
+
+#mainwrapper
+{	margin:	$nMargin-Vertical
+		0px
+		0px
+		0px;
+
+	#leftcontent
+	{	text-align:	justify;
+	
+		iframe,
+		img.project
+		{	border:		2px	#ffffff	groove;
+			overflow:	hidden;
+			width:		100%;
+		}
+		
+		iframe
+		{	height:		500px;
+		}
+
+		ul.post
+		{	li
+			{	@include	margin;
+				@include	padding;
+				
+				background:	$colTertiary;
+				border-radius:	10px;
+				list-style:	disc
+						inside;
+				margin-bottom:	0px;
+		}	}
+
+		div.page-division
+		{	@include	margin;
+
+			float:		left;
+			width:		50%
+					- (	2 * $nMargin-Sides	);
+
+			ul
+			{	width:		100%;
+				margin-top:	10px;
+				
+				li
+				{	padding:	$nPadding-Vertical
+							0px
+							$nPadding-Vertical
+							0px;
+					
+					span
+					{	display:	inline-block;
+						text-align:	right;
+						width:		32%;
+					}
+
+					span.type
+					{	text-align:	left;
+		}	}	}	}
+		
+		div.post-excerpt
+		{	@include		padding;
+
+			float:		left;
+			text-align:	justify;
+			width:		58%;
+			
+			h1,
+			h2,
+			h3,
+			h4,
+			h5
+			{	background:	$colSecondary;
+				margin-top:	10px;
+}	}	}	}
+		
+	.home #leftcontent img {
+		max-width: 100%;
+		}

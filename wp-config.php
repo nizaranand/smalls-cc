@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '} R,y_i-}$?<&W]-2#%-g?IPfR{xG_K+Mk0Ya-.g-t3N4e+=(oWuS.8A]IP5~{$s');
-define('SECURE_AUTH_KEY',  'd8o)IC%![sxRk9xG]t88{]yGv|A,t+^GFG3]l/NhYBm3CCT3Cc`ab:sQ-c}AEKQ+');
-define('LOGGED_IN_KEY',    'TF^GI.HU#?1c$QK r|!%1/~j,e`RqbKv[7N3Z8]q?bz/K3n>5I~JE|;-Z[2JM+Cv');
-define('NONCE_KEY',        'B5|!P_u>tKc[_gJfU6B`s^4$GWB:[rRtxUB%02Whj[cx4R]x/cS]Je<dKB|h,`ei');
-define('AUTH_SALT',        ')vkM<tI4B`S.`D-v;<L-{oBp0j|73,j&^Nru-A^ 0Vj+OV(S_V+BchlC=dDbzF&O');
-define('SECURE_AUTH_SALT', 'eVRBq5Zdk+^P|WeUa;meXylf8ww<ZuFpv*KH6s}u~wU2 _H6*)`{)O#{|14g{DZ7');
-define('LOGGED_IN_SALT',   '7eyo8?67<[re~lyPCI(@o.}{k| hct&c&;Rho3m+<@9gS(9o5U^~ 7xm@%3:OR~a');
-define('NONCE_SALT',       '&YOq]0%6|bMo1n[:S3+v>Z{44Ex!<VI3.wdbk9;w|[RT+m=q~{Y)s(^X3E.;,+K~');
+define('AUTH_KEY',         'a~>Q63xJl!A|m0m?5:9*^ddCK1w7lh`r}2WsSr>`*R7`%I#g!XA.rrowTZ0n6pNJ');
+define('SECURE_AUTH_KEY',  '18KQL,FTMB?9#]^xzU?$maw]VT/,asjd?&[=m)^=7:M[fF}&s I+)pF7q25@Vxiq');
+define('LOGGED_IN_KEY',    '`D!:i#aNf>9-`dzRexsIL7:KARMGG$5-<9_8h5PL$Cm%7bUPE$AP`?R$lVf9h_W ');
+define('NONCE_KEY',        'nsjg.C6Z;Vm_DS?RAV:Vf+z0?<_4#WoUanFz}DuX!{gdJL{ea)] Zh6P#HTiFj13');
+define('AUTH_SALT',        '_> LfhFyRqc$7t2-S,Rxu6E[p6s9[]eu^D*|ojxJ.iNIMen3P&wuOC0NN8+#P#-f');
+define('SECURE_AUTH_SALT', '7p{ c>xsa|=dh[G-iDeA1RYV43V543QL[I#&%Z8tY,mMuP>5QHXM%E>:i$0-#y:.');
+define('LOGGED_IN_SALT',   '2Vy9@p}/|An(|,3$I>*+3m99JY^mudG!:e6_.,|bZ!g[rjBt!186Zr_~zF?C{A0_');
+define('NONCE_SALT',       '/zKh*!Am9Z!QKvE:yS~}3m,5tF?19V7v)h^tc}L7`^N51)[V{{Xnv_~^D5cn?@eV');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       '&YOq]0%6|bMo1n[:S3+v>Z{44Ex!<VI3.wdbk9;w|[RT+m=q~{Y)
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'smalls_cc_';
+$table_prefix  = 'wp_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -79,19 +79,6 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
-define('MULTISITE', true);
-
-define('SUBDOMAIN_INSTALL', true);
-
-$base = '/';
-
-define('DOMAIN_CURRENT_SITE', 'smalls.cc');
-
-define('PATH_CURRENT_SITE', '/');
-
-define('SITE_ID_CURRENT_SITE', 1);
-
-define('BLOG_ID_CURRENT_SITE', 1);
 
 /* That's all, stop editing! Happy blogging. */
 

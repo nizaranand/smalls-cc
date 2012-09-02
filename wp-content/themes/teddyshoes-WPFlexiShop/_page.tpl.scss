@@ -1,0 +1,157 @@
+@import	'page-front.scss';
+
+div.container
+{	iframe
+	{	width:	100%;
+}	}
+
+img.product_detail
+{	border:		2px
+			groove
+			#ffffff;
+	border-radius:	10px;
+	width:		25%;
+}
+
+div.product_overview
+{	border:		#000000
+			solid
+			1px;
+	float:		left;
+	height:		172px;
+	margin:		0px
+			10px
+			10px
+			0px;
+	padding:	0px;
+	width:		18%;
+	
+	img
+	{	border:		#ffffff
+				solid
+				1px;
+			border-radius:	10px;
+		height:		172px;
+		width:		100%;
+	}
+	
+	span.category-name
+	{	background:	#000000;
+		color:		#ffffff;
+		display:	block;
+		font-weight:	bold;
+		opacity:	0.85;
+			filter:		alpha(opacity=85);
+			-moz-opacity:	0.85;
+			-khtml-opacity:	0.85;
+		padding:	5px
+				0px;
+		text-align:	center;
+		width:		100%;
+}	}
+	
+div.product-single
+{	background:	#fcc5c8;
+	min-height:	160px;
+	padding:	0px
+			0px
+			30px
+			0px;
+	width:		100%;
+
+	div.product-single-data
+	{	float:	left;
+		width:	40%;
+		
+		img.product_detail
+		{	width:   100%;
+		}
+		
+		ul.product-single-options
+		{	float:   left;
+			width:   30%;
+
+			li
+			{	padding:	0px
+						0px
+						10px
+						0px;
+	
+				select
+				{	width:	100%;
+		}	}	}
+		
+		div.shoe-size-chart
+	   {  clear:   none;  
+	      float:   left;
+	      padding: 0px   0px   0px   0px;
+	      width:   70%;
+	      
+	      ul
+	      {  float:   left;
+	         margin:  10px  0px  10px  10px;
+	}	}  }
+	
+	div.product-single-details
+	{	padding:	0px	0px	0px	42%;
+	
+		div.fb-comments
+	   {  margin:  20px  0px   20px  0px;  
+	      width:   55%;
+}	}	}
+
+#content-wrapper  #main-content  #main-col   div.affiliate
+{	background-color:	#000000;
+	border-color:		#000000;
+	border-radius:		10px;
+	border-width:		1px;
+	clear:			right;
+	color:			#ffffff;
+	float:			left;
+	height:			200px;
+	margin-left:		2%;
+	margin-top:		30px;
+	overflow-y:		hidden;
+	padding:		$nPadding-Width;
+	width:			44%;
+	
+	h3
+	{	color:      	$szColor-Primary;
+		margin:		0px
+				auto
+				20px
+				auto;
+		text-align:	center;
+	}
+
+	img
+	{	width:	100%;
+}	}
+
+ul.dress_code
+{	float:		left;
+	height:		220px;
+	width:		46%;
+	
+	h5
+	{	margin:	0px	0px	5px	0px
+	}	
+	
+	li.title
+	{	height:		auto;
+		list-style: none none inside;
+		margin:		0px	0px	10px	0px;
+	}
+	
+	li
+	{	height:		18px;
+		list-style:	inline circle outside;
+		overflow:	hidden;
+		
+		span
+		{	float:	right;
+		}
+		
+      &:hover
+      {	height:	auto;
+}  }  }

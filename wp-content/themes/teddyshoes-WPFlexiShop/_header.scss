@@ -1,0 +1,29 @@
+#header
+{	table
+	{	color:	#000000;
+		margin:	auto auto 50px auto;
+		width:	auto;
+	
+		table td,
+		table	li
+		{	color:	#000000;
+	}	}
+
+	#top-navigation
+	{	@include	Border;
+		@include	Padding;
+
+		background:	#000000;
+		width:		100%
+				- (	2 * $nPadding-Width	);
+	
+		ul
+		{	float:	right;
+			margin:	auto
+				30px
+				auto
+				auto;
+		
+			li	a
+			{	color:	#ffffff;
+}	}	}	}

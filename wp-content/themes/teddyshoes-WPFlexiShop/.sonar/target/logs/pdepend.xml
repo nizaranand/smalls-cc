@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics ahh="0" andc="0" calls="387" ccn="334" classes="0" cloc="500" clsa="0" clsc="0" fanout="6" files="8" functions="109" interfs="0" leafs="0" lloc="1434" loc="3668" locExecutable="2734" maxdit="0" ncloc="3168" nom="0" nop="2" roots="0">
+  <file name="" classes="2" functions="0">
+    <class name="WP_Query" ca="2" cbo="0" ce="0" cloc="0" lloc="0" loc="1" locExecutable="0" ncloc="1"/>
+    <class name="WPSC_Query" ca="3" cbo="0" ce="0" cloc="0" lloc="0" loc="1" locExecutable="0" ncloc="1"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/functions.php" classes="0" cloc="39" functions="43" lloc="465" loc="997" locExecutable="856" ncloc="958">
+    <function name="flexishop_setup" ccn="2" cloc="11" lloc="17" loc="41" locExecutable="21" ncloc="30" npath="2"/>
+    <function name="flexishop_page_menu_args" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="flexishop_continue_reading_link" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="flexishop_auto_excerpt_more" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="content" ccn="2" cloc="0" lloc="9" loc="13" locExecutable="13" ncloc="13" npath="2"/>
+    <function name="flexishop_comment" ccn="5" cloc="1" lloc="24" loc="43" locExecutable="41" ncloc="42" npath="4"/>
+    <function name="flexishop_widgets_init" ccn="1" cloc="14" lloc="14" loc="152" locExecutable="128" ncloc="138" npath="1"/>
+    <function name="flexishop_remove_recent_comments_style" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="flexishop_posted_on" ccn="1" cloc="0" lloc="1" loc="15" locExecutable="15" ncloc="15" npath="1"/>
+    <function name="flexishop_posted_in" ccn="3" cloc="2" lloc="7" loc="19" locExecutable="17" ncloc="17" npath="3"/>
+    <function name="my_theme_styles" ccn="1" cloc="1" lloc="8" loc="12" locExecutable="10" ncloc="11" npath="1"/>
+    <function name="getCategories" ccn="2" cloc="0" lloc="3" loc="6" locExecutable="6" ncloc="6" npath="2"/>
+    <function name="getBestSellers" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getLatestProducts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFrontCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFeaturedProducts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFeaturedBlog" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getCart" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFullCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getGroupedCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getTwitter" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getProductGallery" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getBlogCategories" ccn="2" cloc="0" lloc="6" loc="10" locExecutable="9" ncloc="10" npath="2"/>
+    <function name="getTestimonials" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getPromotions" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getSliderPosts" ccn="4" cloc="0" lloc="19" loc="30" locExecutable="30" ncloc="30" npath="4"/>
+    <function name="getSliderPromotions" ccn="7" cloc="0" lloc="36" loc="54" locExecutable="54" ncloc="54" npath="10"/>
+    <function name="getSliderProducts" ccn="14" cloc="0" lloc="55" loc="74" locExecutable="70" ncloc="74" npath="488"/>
+    <function name="getPosts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="change_category_description" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="enqueue_scripts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="create_promotion_type" ccn="1" cloc="0" lloc="1" loc="24" locExecutable="24" ncloc="24" npath="1"/>
+    <function name="admin_init" ccn="1" cloc="2" lloc="2" loc="6" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="promotion_meta" ccn="9" cloc="0" lloc="39" loc="87" locExecutable="84" ncloc="87" npath="72"/>
+    <function name="save_details" ccn="3" cloc="0" lloc="16" loc="18" locExecutable="18" ncloc="18" npath="3"/>
+    <function name="promotion_edit_columns" ccn="1" cloc="0" lloc="2" loc="13" locExecutable="12" ncloc="13" npath="1"/>
+    <function name="promotion_custom_columns" ccn="6" cloc="0" lloc="21" loc="25" locExecutable="24" ncloc="25" npath="5"/>
+    <function name="create_slider_type" ccn="1" cloc="0" lloc="1" loc="24" locExecutable="24" ncloc="24" npath="1"/>
+    <function name="slider_meta" ccn="11" cloc="0" lloc="34" loc="84" locExecutable="82" ncloc="84" npath="216"/>
+    <function name="slider_edit_columns" ccn="1" cloc="0" lloc="2" loc="11" locExecutable="10" ncloc="11" npath="1"/>
+    <function name="slider_custom_columns" ccn="8" cloc="0" lloc="22" loc="26" locExecutable="25" ncloc="26" npath="7"/>
+    <function name="pagination" ccn="21" cloc="0" lloc="23" loc="36" locExecutable="30" ncloc="36" npath="8646"/>
+    <function name="TableNames" ccn="1" cloc="0" lloc="10" loc="13" locExecutable="12" ncloc="13" npath="1"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/functions/fullcategories.php" classes="0" cloc="4" functions="1" lloc="43" loc="61" locExecutable="55" ncloc="57">
+    <function name="return_wpsc_end_category_query" ccn="1" cloc="0" lloc="4" loc="6" locExecutable="6" ncloc="6" npath="1"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/functions/splitcategories.php" classes="0" cloc="3" functions="1" lloc="28" loc="38" locExecutable="32" ncloc="35">
+    <function name="return_wpsc_end_category_query" ccn="1" cloc="0" lloc="4" loc="6" locExecutable="6" ncloc="6" npath="1"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/functions/twitter.php" classes="0" cloc="17" functions="2" lloc="29" loc="60" locExecutable="39" ncloc="43">
+    <function name="getTwitterStatus" ccn="2" cloc="0" lloc="8" loc="14" locExecutable="13" ncloc="14" npath="2"/>
+    <function name="niceTime" ccn="7" cloc="0" lloc="14" loc="18" locExecutable="18" ncloc="18" npath="7"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/theme-options.php" classes="0" cloc="31" functions="8" lloc="264" loc="811" locExecutable="745" ncloc="780">
+    <function name="theme_options_init" ccn="1" cloc="0" lloc="4" loc="6" locExecutable="6" ncloc="6" npath="1"/>
+    <function name="theme_options_add_page" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="FlexiStoreAdmin" ccn="1" cloc="3" lloc="6" loc="12" locExecutable="8" ncloc="9" npath="1"/>
+    <function name="theme_options_do_page" ccn="34" cloc="8" lloc="198" loc="401" locExecutable="391" ncloc="393" npath="95551488"/>
+    <function name="file_uploads_section" ccn="2" cloc="1" lloc="4" loc="8" locExecutable="7" ncloc="7" npath="2"/>
+    <function name="site_logo_upload" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="leader_image_upload" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="theme_options_validate" ccn="10" cloc="6" lloc="26" loc="49" locExecutable="35" ncloc="43" npath="960"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/timthumb.php" classes="0" cloc="143" functions="13" lloc="304" loc="759" locExecutable="418" ncloc="616">
+    <function name="show_image" ccn="4" cloc="3" lloc="13" loc="33" locExecutable="20" ncloc="30" npath="8"/>
+    <function name="get_request" ccn="2" cloc="0" lloc="3" loc="13" locExecutable="7" ncloc="13" npath="2"/>
+    <function name="open_image" ccn="4" cloc="0" lloc="8" loc="21" locExecutable="11" ncloc="21" npath="4"/>
+    <function name="clean_cache" ccn="7" cloc="2" lloc="15" loc="38" locExecutable="23" ncloc="36" npath="20"/>
+    <function name="filemtime_compare" ccn="1" cloc="0" lloc="6" loc="12" locExecutable="8" ncloc="12" npath="1"/>
+    <function name="mime_type" ccn="2" cloc="1" lloc="5" loc="13" locExecutable="8" ncloc="12" npath="2"/>
+    <function name="check_cache" ccn="3" cloc="3" lloc="5" loc="15" locExecutable="9" ncloc="12" npath="3"/>
+    <function name="show_cache_file" ccn="6" cloc="4" lloc="22" loc="44" locExecutable="30" ncloc="40" npath="10"/>
+    <function name="get_cache_file" ccn="3" cloc="0" lloc="8" loc="18" locExecutable="12" ncloc="18" npath="4"/>
+    <function name="check_external" ccn="12" cloc="0" lloc="38" loc="79" locExecutable="53" ncloc="79" npath="49"/>
+    <function name="clean_source" ccn="2" cloc="4" lloc="10" loc="24" locExecutable="13" ncloc="20" npath="2"/>
+    <function name="get_document_root" ccn="8" cloc="6" lloc="18" loc="48" locExecutable="34" ncloc="42" npath="54"/>
+    <function name="display_error" ccn="1" cloc="0" lloc="5" loc="9" locExecutable="7" ncloc="9" npath="1"/>
+  </file>
+  <file name="/srv/www/teddyshoes.com/wp-content/themes/teddyshoes-WPFlexiShop/functions copy.php" classes="0" cloc="263" functions="41" lloc="301" loc="942" locExecutable="589" ncloc="679">
+    <function name="twentyten_setup" ccn="2" cloc="22" lloc="20" loc="63" locExecutable="30" ncloc="41" npath="2"/>
+    <function name="twentyten_admin_header_style" ccn="1" cloc="0" lloc="0" loc="15" locExecutable="15" ncloc="15" npath="1"/>
+    <function name="twentyten_page_menu_args" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="twentyten_excerpt_length" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="twentyten_continue_reading_link" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="twentyten_auto_excerpt_more" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="content" ccn="2" cloc="0" lloc="9" loc="13" locExecutable="13" ncloc="13" npath="2"/>
+    <function name="twentyten_custom_excerpt_more" ccn="3" cloc="0" lloc="3" loc="6" locExecutable="6" ncloc="6" npath="3"/>
+    <function name="twentyten_remove_gallery_css" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="twentyten_comment" ccn="5" cloc="1" lloc="24" loc="43" locExecutable="41" ncloc="42" npath="4"/>
+    <function name="twentyten_widgets_init" ccn="1" cloc="10" lloc="10" loc="111" locExecutable="92" ncloc="101" npath="1"/>
+    <function name="twentyten_remove_recent_comments_style" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="twentyten_posted_on" ccn="1" cloc="0" lloc="1" loc="15" locExecutable="15" ncloc="15" npath="1"/>
+    <function name="twentyten_posted_in" ccn="3" cloc="2" lloc="7" loc="19" locExecutable="17" ncloc="17" npath="3"/>
+    <function name="my_theme_styles" ccn="1" cloc="1" lloc="8" loc="12" locExecutable="10" ncloc="11" npath="1"/>
+    <function name="getCategories" ccn="2" cloc="0" lloc="3" loc="6" locExecutable="6" ncloc="6" npath="2"/>
+    <function name="getBestSellers" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getLatestProducts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFrontCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFeaturedProducts" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFeaturedBlog" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getCart" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getFullCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getGroupedCategories" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getTwitter" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getBlogCategories" ccn="2" cloc="0" lloc="6" loc="10" locExecutable="9" ncloc="10" npath="2"/>
+    <function name="getTestimonials" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="getPromotions" ccn="1" cloc="0" lloc="1" loc="3" locExecutable="3" ncloc="3" npath="1"/>
+    <function name="change_category_description" ccn="1" cloc="0" lloc="2" loc="4" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="enqueue_scripts" ccn="1" cloc="2" lloc="2" loc="6" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="create_promotion_type" ccn="1" cloc="0" lloc="1" loc="24" locExecutable="24" ncloc="24" npath="1"/>
+    <function name="create_testimonial_type" ccn="1" cloc="0" lloc="1" loc="24" locExecutable="24" ncloc="24" npath="1"/>
+    <function name="admin_init" ccn="1" cloc="2" lloc="2" loc="6" locExecutable="4" ncloc="4" npath="1"/>
+    <function name="author" ccn="1" cloc="0" lloc="4" loc="9" locExecutable="9" ncloc="9" npath="1"/>
+    <function name="promotion_meta" ccn="9" cloc="0" lloc="39" loc="82" locExecutable="78" ncloc="82" npath="72"/>
+    <function name="save_details" ccn="3" cloc="0" lloc="11" loc="13" locExecutable="13" ncloc="13" npath="3"/>
+    <function name="testimonial_edit_columns" ccn="1" cloc="0" lloc="2" loc="10" locExecutable="9" ncloc="10" npath="1"/>
+    <function name="testimonial_custom_columns" ccn="3" cloc="0" lloc="9" loc="13" locExecutable="12" ncloc="13" npath="2"/>
+    <function name="promotion_edit_columns" ccn="1" cloc="0" lloc="2" loc="13" locExecutable="12" ncloc="13" npath="1"/>
+    <function name="promotion_custom_columns" ccn="6" cloc="0" lloc="21" loc="25" locExecutable="24" ncloc="25" npath="5"/>
+    <function name="pagination" ccn="21" cloc="0" lloc="23" loc="36" locExecutable="30" ncloc="36" npath="8646"/>
+  </file>
+</metrics>

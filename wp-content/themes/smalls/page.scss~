@@ -1,6 +1,0 @@
-@include	'page-front.scss';
-
-div.posts
-{	iframe
-	{	width:	100%;	
-}	}

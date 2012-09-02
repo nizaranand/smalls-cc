@@ -1,0 +1,18 @@
+div.front-block
+{	@include			margin;
+
+	background:		#ffffff;
+	border:			2px	#ffffff	groove;
+	border-radius:	$nMargin-Sides	$nMargin-Sides	$nMargin-Sides	$nMargin-Sides;
+	float:			left;
+	height:			200px;
+	width:			45%;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+	{	border:	none;
+}	}
