@@ -8,12 +8,7 @@
 	?>
 </div>
 <!-- begin footer -->
-<div id="footer">
-   <?php 
-	$link = '<a href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
-	printf(__('Copyright &copy; %1$d %2$s. All Rights Reserved.', "feed-me-seymour"), date('Y'), $link);
-	echo " ";
-	printf(__('%1$s created by %2$s', "feed-me-seymour"), '<span class="red">'.THEME_NAME.'</span>', '<a href="http://themes.bavotasan.com"><span class="red">Themes by bavotasan.com</span></a>. ');  printf(__("Powered by %s", "feed-me-seymour"), '<a href="http://www.wordpress.org">WordPress</a>'); ?> 
+<div  id =  "footer" >  
 </div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php echo THEME_URL; ?>/js/effects.js"></script> 
@@ -26,8 +21,82 @@ jQuery(function(){
 	});	});
 /* ]]> */
 </script>
-<!-- end footer -->
-<!-- <?php echo THEME_NAME; ?> theme designed by Themes by bavotasan.com, http://themes.bavotasan.com -->
-<?php if(theme_option('google_analytics')) { echo stripslashes(theme_option('google_analytics')); } ?>
+<?php
+if(theme_option('google_analytics')) { echo stripslashes(theme_option('google_analytics')); }
+
+
+wp_nav_menu	(	array	(
+	'container'	=>	false,
+	'depth'		=>	1,
+	'menu'		=>	'top-navigation'
+				)			);
+?>
+
+<table	class		=	"contact"
+	summary	=	"contact information"
+>
+<tr>
+<td>
+	<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+	<script type="IN/Share" data-url="//smalls.cc" data-counter="right"></script>
+</td>
+<td>
+	<div	 class		=  "g-plusone"
+		data-href	=  "//smalls.cc"
+	>  </div>
+	<script type="text/javascript" src="//apis.google.com/js/plusone.js">
+		{parsetags: 'explicit'}
+	</script>
+	<script type="text/javascript">gapi.plusone.go();</script>
+</td>
+<td>
+	<script	type  =  'text/javascript' >
+		reddit_target  =  'forhire'
+		reddit_title	=  'web development: Smalls Support'
+	</script>
+	<script  src	=  "//www.reddit.com/static/button/button1.js?url=smalls.cc&newwindow=1&styled=off"
+		type  =  "text/javascript"
+	>  </script>
+</td>
+<td	class	=	"secondary-colour"	>
+<a	href	=	'mailto:jonathan@smalls.cc'	>
+	jonathan@smalls.cc
+</a>
+	857 472 2772
+</td>
+<td	class	=	'secondary-colour'	>
+	serving Boston MA	<br/>
+	New England
+</td>
+</tr>
+</table>
+
+<script	src	=	'//code.jquery.com/jquery-1.7.2.min.js'
+	type	=	'text/javascript'
+>	</script>
+<script	src	=	"//smalls.cc/wp-content/scripts/organictabs.jquery.js"
+	type	=	'text/javascript'
+>	</script>
+<script>
+	$(function() {
+		$("#OrganicTabs").organicTabs({
+			"speed": 100,
+			"param": "tab"
+		});
+
+</script>
+<!-- Piwik --> 
+ <script type="text/javascript">
+ var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.smalls.cc/" : "http://piwik.smalls.cc/");
+ document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+ </script><script type="text/javascript">
+ try {
+ var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+ piwikTracker.trackPageView();
+ piwikTracker.enableLinkTracking();
+ } catch( err ) {}
+ </script><noscript><p><img src="http://piwik.smalls.cc/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+ <!-- End Piwik Tracking Code -->
+
 </body>
 </html>

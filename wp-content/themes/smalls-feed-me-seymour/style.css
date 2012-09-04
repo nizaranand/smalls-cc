@@ -229,6 +229,9 @@ div.front-block {
       float: left;
       width: 83px; }
 
+#mainwrapper #sidebar {
+  display: none; }
+
 div.wpcf7 {
   margin: 10px 1%;
   padding: 5px 1%;
