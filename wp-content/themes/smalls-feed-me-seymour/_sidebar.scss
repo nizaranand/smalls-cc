@@ -1,10 +1,21 @@
-#secondsidebar
-{	@include	padding;
-
-	float:	right;
-	width:	34%;
+#mainwrapper	#sidebar,
+#mainwrapper	#secondsidebar
+{	padding:	0px;
+	width:		19%;
 	
-	div.front-block
+	ul	li
+	{	margin:		5px
+				0px
+				0px
+				0px;
+		text-align:	right;
+	
+		.type
+		{	float:	left;
+			width:	83px;
+	}	}
+
+	.front-block
 	{	width:	100%;
 
 		h1,
@@ -15,21 +26,23 @@
 		h6
 		{	border:	none;
 	}	}
-	
-	ul
-	{	li
-		{	margin:		5px
-					0px
-					0px
-					0px;
-			text-align:	right;
-	
-			span.type
-			{	float:	left;
-				width:	83px;
-}	}	}	}
 
+	.side-widget
+	{	@include	border;
+
+		background:	$colSecondary;
+		padding:	0px;
+		width:		100%;
+
+		#sform
+		{	padding:	0px;
+			width:		100%;
+}	}	}
 
 #mainwrapper	#sidebar
-{	display:	none;
+{	float:	left;
+}
+
+#mainwrapper	#secondsidebar
+{	float:	right;
 }

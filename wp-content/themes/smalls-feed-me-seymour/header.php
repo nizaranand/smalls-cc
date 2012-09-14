@@ -17,7 +17,15 @@
 <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' | '; } ?><?php bloginfo('name'); if(is_home()) { echo ' | '; bloginfo('description'); } ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<?php pbt_header_css(); ?>
+
+<?php
+/*	jonathan@smalls.cc	2012 September 14
+ *	removing internal CSS, which otherwise overrides external CSS
+ *
+ *	pbt_header_css();
+ */
+?>
+
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="<?php echo THEME_URL; ?>/iestyles.css" />

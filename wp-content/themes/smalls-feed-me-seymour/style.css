@@ -1,16 +1,16 @@
 @import url(//yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css);
 /*	Theme Name: Smalls - Feed Me, Seymour	*/
-div.header {
+#header {
   padding: 5px 1%;
   background: url("../../uploads/technology.jpg");
   background-position: 41%;
   background-size: cover;
   color: #221f20;
   border: 1px dotted #aaaaaa;
-  font-family: "Georgia", serif;
-  width: 96%; }
-  div.header #description,
-  div.header #title {
+  float: left;
+  font-family: "Georgia", serif; }
+  #header #description,
+  #header #title {
     color: #ffffff;
     float: none;
     font-weight: 600;
@@ -18,16 +18,16 @@ div.header {
     text-align: center;
     text-shadow: 0px 0px 5px black;
     width: 290px; }
-  div.header #title {
+  #header #title {
     font-size: 48px;
     line-height: 52px;
     border-radius: 3px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; }
-    div.header #title a {
+    #header #title a {
       color: #ffffff;
       display: block; }
-  div.header .fl {
+  #header .fl {
     float: none important; }
 
 #title.aligncenter {
@@ -89,6 +89,70 @@ div.header {
   text-align: center;
   clear: both; }
 
+div.front-block {
+  margin: 2px 1%;
+  background: #ffffff;
+  border: 2px	#ffffff	groove;
+  border-radius: 1% 1% 1% 1%;
+  float: left;
+  height: 200px;
+  width: 45%; }
+  div.front-block h1,
+  div.front-block h2,
+  div.front-block h3,
+  div.front-block h4,
+  div.front-block h5,
+  div.front-block h6 {
+    border: none; }
+
+#mainwrapper #sidebar,
+#mainwrapper #secondsidebar {
+  padding: 0px;
+  width: 19%; }
+  #mainwrapper #sidebar ul li,
+  #mainwrapper #secondsidebar ul li {
+    margin: 5px 0px 0px 0px;
+    text-align: right; }
+    #mainwrapper #sidebar ul li .type,
+    #mainwrapper #secondsidebar ul li .type {
+      float: left;
+      width: 83px; }
+  #mainwrapper #sidebar .front-block,
+  #mainwrapper #secondsidebar .front-block {
+    width: 100%; }
+    #mainwrapper #sidebar .front-block h1,
+    #mainwrapper #sidebar .front-block h2,
+    #mainwrapper #sidebar .front-block h3,
+    #mainwrapper #sidebar .front-block h4,
+    #mainwrapper #sidebar .front-block h5,
+    #mainwrapper #sidebar .front-block h6,
+    #mainwrapper #secondsidebar .front-block h1,
+    #mainwrapper #secondsidebar .front-block h2,
+    #mainwrapper #secondsidebar .front-block h3,
+    #mainwrapper #secondsidebar .front-block h4,
+    #mainwrapper #secondsidebar .front-block h5,
+    #mainwrapper #secondsidebar .front-block h6 {
+      border: none; }
+  #mainwrapper #sidebar .side-widget,
+  #mainwrapper #secondsidebar .side-widget {
+    margin: 2px 1%;
+    padding: 5px 1%;
+    border: 2px solid ridge;
+    border-radius: 3px;
+    background: #6fa537;
+    padding: 0px;
+    width: 100%; }
+    #mainwrapper #sidebar .side-widget #sform,
+    #mainwrapper #secondsidebar .side-widget #sform {
+      padding: 0px;
+      width: 100%; }
+
+#mainwrapper #sidebar {
+  float: left; }
+
+#mainwrapper #secondsidebar {
+  float: right; }
+
 table.contact {
   background-color: #6fa537;
   border-top: 2px ridge #807d7e;
@@ -144,128 +208,69 @@ table.contact {
         border-bottom: 3px #e06110 double;
         text-decoration: none; }
 
-div.front-block {
-  margin: 10px 1%;
-  background: #ffffff;
-  border: 2px	#ffffff	groove;
-  border-radius: 1% 1% 1% 1%;
-  float: left;
-  height: 200px;
-  width: 45%; }
-  div.front-block h1,
-  div.front-block h2,
-  div.front-block h3,
-  div.front-block h4,
-  div.front-block h5,
-  div.front-block h6 {
-    border: none; }
-
 #mainwrapper {
-  margin: 10px 0px 0px 0px; }
+  float: left;
+  margin: 2px 0px 0px 0px;
+  padding: 0px;
+  position: relative;
+  top: 15px; }
   #mainwrapper #leftcontent {
-    text-align: justify; }
+    float: left;
+    position: relative;
+    left: 2%;
+    text-align: justify;
+    width: 60%; }
     #mainwrapper #leftcontent iframe,
-    #mainwrapper #leftcontent img.project {
+    #mainwrapper #leftcontent .project {
       border: 2px	#ffffff	groove;
       overflow: hidden;
       width: 100%; }
     #mainwrapper #leftcontent iframe {
       height: 500px; }
-    #mainwrapper #leftcontent ul.post li {
-      margin: 10px 1%;
+    #mainwrapper #leftcontent .post li {
+      margin: 2px 1%;
       padding: 5px 1%;
       background: #807d7e;
       border-radius: 10px;
       list-style: disc inside;
       margin-bottom: 0px; }
-    #mainwrapper #leftcontent div.page-division {
-      margin: 10px 1%;
+    #mainwrapper #leftcontent .page-division {
+      margin: 2px 1%;
       float: left;
       width: 48%; }
-      #mainwrapper #leftcontent div.page-division ul {
+      #mainwrapper #leftcontent .page-division ul {
         width: 100%;
         margin-top: 10px; }
-        #mainwrapper #leftcontent div.page-division ul li {
+        #mainwrapper #leftcontent .page-division ul li {
           padding: 5px 0px 5px 0px; }
-          #mainwrapper #leftcontent div.page-division ul li span {
+          #mainwrapper #leftcontent .page-division ul li span {
             display: inline-block;
             text-align: right;
             width: 32%; }
-          #mainwrapper #leftcontent div.page-division ul li span.type {
+          #mainwrapper #leftcontent .page-division ul li .type {
             text-align: left; }
-    #mainwrapper #leftcontent div.post-excerpt {
+    #mainwrapper #leftcontent .post-excerpt {
       padding: 5px 1%;
       float: left;
       text-align: justify;
       width: 58%; }
-      #mainwrapper #leftcontent div.post-excerpt h1,
-      #mainwrapper #leftcontent div.post-excerpt h2,
-      #mainwrapper #leftcontent div.post-excerpt h3,
-      #mainwrapper #leftcontent div.post-excerpt h4,
-      #mainwrapper #leftcontent div.post-excerpt h5 {
+      #mainwrapper #leftcontent .post-excerpt h1,
+      #mainwrapper #leftcontent .post-excerpt h2,
+      #mainwrapper #leftcontent .post-excerpt h3,
+      #mainwrapper #leftcontent .post-excerpt h4,
+      #mainwrapper #leftcontent .post-excerpt h5 {
         background: #6fa537;
         margin-top: 10px; }
 
 .home #leftcontent img {
   max-width: 100%; }
 
-#secondsidebar {
-  padding: 5px 1%;
-  float: right;
-  width: 34%; }
-  #secondsidebar div.front-block {
-    width: 100%; }
-    #secondsidebar div.front-block h1,
-    #secondsidebar div.front-block h2,
-    #secondsidebar div.front-block h3,
-    #secondsidebar div.front-block h4,
-    #secondsidebar div.front-block h5,
-    #secondsidebar div.front-block h6 {
-      border: none; }
-  #secondsidebar ul li {
-    margin: 5px 0px 0px 0px;
-    text-align: right; }
-    #secondsidebar ul li span.type {
-      float: left;
-      width: 83px; }
-
-#mainwrapper #sidebar {
-  display: none; }
-
-div.wpcf7 {
-  margin: 10px 1%;
-  padding: 5px 1%;
-  border: 3px groove #807d7e;
-  float: left;
-  text-align: left;
-  width: 48%; }
-  div.wpcf7 ul li {
-    padding: 5px 0px 5px 0px; }
-    div.wpcf7 ul li input {
-      vertical-align: top; }
-    div.wpcf7 ul li label {
-      display: block; }
-    div.wpcf7 ul li span.type {
-      display: inline-block;
-      margin-bottom: 5px;
-      width: 175px; }
-    div.wpcf7 ul li span.wpcf7-form-control-wrap {
-      width: 100%; }
-    div.wpcf7 ul li span.wpcf7-list-item-label {
-      display: inline-block; }
-    div.wpcf7 ul li input.wpcf7-submit {
-      text-align: center;
-      width: 175px; }
-    div.wpcf7 ul li input.wpcf7-text,
-    div.wpcf7 ul li textarea {
-      width: 100%; }
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-  margin: 10px 1%;
+  margin: 2px 1%;
   padding: 5px 1%;
   border: 2px solid ridge;
   border-radius: 3px;
@@ -282,16 +287,14 @@ a {
 img {
   border: 0; }
 
-html,
-body {
+html {
   background: #221f20;
-  color: #ffffff;
+  color: white;
   font-family: "Verdana", "Geneva", sans-serif;
   font-size: 14px;
   margin: auto;
-  padding: 25px	0px	65px	0px;
-  width: 95%	!important;
-  max-width: 800px; }
+  padding: 32px 0px 65px 0px;
+  width: 95% !important; }
 
 span.type {
   background: #6fa537;
@@ -310,7 +313,6 @@ span.type {
   clear: both; }
 
 /* Main Elements */
-#mainwrapper
 #sidebar {
   float: left;
   margin: 0;

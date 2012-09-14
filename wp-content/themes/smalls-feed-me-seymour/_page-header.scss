@@ -1,4 +1,4 @@
-div.header
+#header
 {	@include	padding;
 
 	background:	url(	'../../uploads/technology.jpg'	);
@@ -8,9 +8,9 @@ div.header
 	border:		1px
 			dotted
 			#aaa;
+	float:		left;
 	font-family:	'Georgia',
 			serif;
-	width:		96%;
 
 	#description,
 	#title

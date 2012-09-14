@@ -4,10 +4,11 @@ $colPrimary:	#221F20;
 $colSecondary:	#6FA537;
 $colTertiary:	#807D7E;
 
+$colText:	#ffffff;
 $colLink_Hover:	#E06110;
 
 $nMargin-Sides:		1%;
-$nMargin-Vertical:	10px;
+$nMargin-Vertical:	2px;
 $nPadding-Sides:	1%;
 $nPadding-Vertical:	5px;
 
@@ -47,11 +48,7 @@ $nPadding-Vertical:	5px;
 }	}
 
 @import	'//yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css';
-@import	'page-header.scss';
-@import	'page-footer.scss';
 @import	'page.scss';
-@import	'sidebar.scss';
-@import	'wpcf-form.scss';
 
 h1,
 h2,
@@ -77,21 +74,23 @@ img
 {  border: 0;
 }
 
-html,
-body
+html
 /*	jonathan@smalls.cc	2012 June 21
 -	editing site to match business card THAT I JUST ORDERED
 */
 {	background:	$colPrimary;
-	color:		#ffffff;
+	color:		$colText;
 	font-family:	"Verdana",
 			"Geneva",
 			sans-serif;		
 	font-size:	14px;
  	margin:		auto;
- 	padding:		25px	0px	65px	0px;
-	width:		95%	!important;
-		max-width:	800px;
+ 	padding:	32px
+			0px
+			65px
+			0px;
+	width:		95%
+			!important;
 }
 					
 span.type
@@ -109,16 +108,6 @@ span.type
 .clear { clear: both; }
 
 /* Main Elements */
-	
-#mainwrapper
-/*	jonathan@smalls.cc	2012 June 28
-REMOVED:	float: left;
-			padding: 0;
-			margin: 0;	
-{	border:	1px	dotted	#aaaaaa;
-		border-top:	none;
-}
-*/
 
 #sidebar 
 {	float: left;

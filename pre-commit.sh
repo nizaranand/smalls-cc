@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo	`sass	--update	.`
-echo	`git	add	*`
-echo	`sleep	2`
+sass		--update	.
+wait
+git add		-A	
 	
 #my $remote_filename = '/var/log/nginx/smalls.cc-error_log';
 #my $remote_host = 'ec2-user@smalls.cc';
