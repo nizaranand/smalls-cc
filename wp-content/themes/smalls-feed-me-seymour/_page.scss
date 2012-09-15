@@ -5,23 +5,26 @@
 
 #mainwrapper
 {	float:		left;
-	margin:		$nMargin-Vertical
-			0px
-			0px
-			0px;
 	padding:	0px;
-	position:	relative;
-		top:	15px;
 
 	#leftcontent
 	{	float:		left;
+		padding:	0px
+				2px
+				0px
+				2px;
 		position:	relative;
-			left:	2%;
+			left:	1%;
 		text-align:	justify;
 		width:		100%
 				- (	2 * 19%	)
 				- (	2 * $nMargin-Sides	);
 	
+		h2	a
+		{	color:		#ffffff;
+			display:	inline-block;
+		}
+
 		iframe,
 		.project
 		{	border:		2px	#ffffff	groove;
@@ -85,6 +88,29 @@
 			h5
 			{	background:	$colSecondary;
 				margin-top:	10px;
+		}	}
+
+		#threecol,
+		#threecol2
+		{	background:	none;
+			float:		none;
+
+			.threepost
+			{	height:		150px;
+				overflow:	hidden;
+				padding:	0px
+						$nPadding-Sides;
+				width:		50%
+						- (	2 * $nPadding-Sides	);
+
+				h2
+				{	font-size:	150%;
+					text-align:	center;
+			}	}
+
+			.threepost2,
+			.threepost5
+			{	margin:	0px;
 }	}	}	}
 		
 	.home #leftcontent img {

@@ -25,11 +25,11 @@ jQuery(function(){
 if(theme_option('google_analytics')) { echo stripslashes(theme_option('google_analytics')); }
 
 
-wp_nav_menu	(	array	(
+wp_nav_menu(	array(
 	'container'	=>	false,
 	'depth'		=>	1,
 	'menu'		=>	'top-navigation'
-				)			);
+		)	);
 ?>
 
 <table	class		=	"contact"

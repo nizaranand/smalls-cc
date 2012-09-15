@@ -1,13 +1,14 @@
 @import url(//yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css);
 /*	Theme Name: Smalls - Feed Me, Seymour	*/
+#login {
+  display: none; }
+
 #header {
-  padding: 5px 1%;
   background: url("../../uploads/technology.jpg");
   background-position: 41%;
   background-size: cover;
   color: #221f20;
-  border: 1px dotted #aaaaaa;
-  float: left;
+  border-radius: 3px;
   font-family: "Georgia", serif; }
   #header #description,
   #header #title {
@@ -18,6 +19,18 @@
     text-align: center;
     text-shadow: 0px 0px 5px black;
     width: 290px; }
+  #header #header-rss {
+    display: none;
+    margin: 15px 0px 0px; }
+    #header #header-rss p {
+      padding: 0;
+      margin: 0 5px;
+      font-size: 11px;
+      color: #aaa; }
+    #header #header-rss #header-rss.fr {
+      text-align: right; }
+    #header #header-rss #header-rss.aligncenter {
+      text-align: center; }
   #header #title {
     font-size: 48px;
     line-height: 52px;
@@ -55,20 +68,6 @@
     margin: 0; }
     #login ul li {
       display: inline; }
-
-#header-rss {
-  margin: 15px 0 0; }
-  #header-rss p {
-    padding: 0;
-    margin: 0 5px;
-    font-size: 11px;
-    color: #aaa; }
-
-#header-rss.fr {
-  text-align: right; }
-
-#header-rss.aligncenter {
-  text-align: center; }
 
 .dot:before {
   content: url(images/whitedot.png) " "; }
@@ -136,16 +135,23 @@ div.front-block {
   #mainwrapper #sidebar .side-widget,
   #mainwrapper #secondsidebar .side-widget {
     margin: 2px 1%;
-    padding: 5px 1%;
+    padding: 3px 1%;
     border: 2px solid ridge;
     border-radius: 3px;
     background: #6fa537;
+    border-width: 0px;
     padding: 0px;
     width: 100%; }
     #mainwrapper #sidebar .side-widget #sform,
     #mainwrapper #secondsidebar .side-widget #sform {
       padding: 0px;
       width: 100%; }
+    #mainwrapper #sidebar .side-widget #wp-calendar,
+    #mainwrapper #secondsidebar .side-widget #wp-calendar {
+      width: 100%; }
+      #mainwrapper #sidebar .side-widget #wp-calendar td,
+      #mainwrapper #secondsidebar .side-widget #wp-calendar td {
+        text-align: left; }
 
 #mainwrapper #sidebar {
   float: left; }
@@ -186,7 +192,7 @@ table.contact {
     color: #0077AA; }
 
 #menu-top-navigation {
-  padding: 5px 1%;
+  padding: 3px 1%;
   background: #ffffff;
   border-bottom: 2px ridge #807d7e;
   display: inline;
@@ -197,7 +203,7 @@ table.contact {
   left: 0px;
   width: 100%; }
   #menu-top-navigation li {
-    padding: 5px 1%;
+    padding: 3px 1%;
     display: inline;
     text-align: center; }
     #menu-top-navigation li a {
@@ -210,16 +216,17 @@ table.contact {
 
 #mainwrapper {
   float: left;
-  margin: 2px 0px 0px 0px;
-  padding: 0px;
-  position: relative;
-  top: 15px; }
+  padding: 0px; }
   #mainwrapper #leftcontent {
     float: left;
+    padding: 0px 2px 0px 2px;
     position: relative;
-    left: 2%;
+    left: 1%;
     text-align: justify;
     width: 60%; }
+    #mainwrapper #leftcontent h2 a {
+      color: #ffffff;
+      display: inline-block; }
     #mainwrapper #leftcontent iframe,
     #mainwrapper #leftcontent .project {
       border: 2px	#ffffff	groove;
@@ -229,7 +236,7 @@ table.contact {
       height: 500px; }
     #mainwrapper #leftcontent .post li {
       margin: 2px 1%;
-      padding: 5px 1%;
+      padding: 3px 1%;
       background: #807d7e;
       border-radius: 10px;
       list-style: disc inside;
@@ -242,7 +249,7 @@ table.contact {
         width: 100%;
         margin-top: 10px; }
         #mainwrapper #leftcontent .page-division ul li {
-          padding: 5px 0px 5px 0px; }
+          padding: 3px 0px 3px 0px; }
           #mainwrapper #leftcontent .page-division ul li span {
             display: inline-block;
             text-align: right;
@@ -250,7 +257,7 @@ table.contact {
           #mainwrapper #leftcontent .page-division ul li .type {
             text-align: left; }
     #mainwrapper #leftcontent .post-excerpt {
-      padding: 5px 1%;
+      padding: 3px 1%;
       float: left;
       text-align: justify;
       width: 58%; }
@@ -261,6 +268,25 @@ table.contact {
       #mainwrapper #leftcontent .post-excerpt h5 {
         background: #6fa537;
         margin-top: 10px; }
+    #mainwrapper #leftcontent #threecol,
+    #mainwrapper #leftcontent #threecol2 {
+      background: none;
+      float: none; }
+      #mainwrapper #leftcontent #threecol .threepost,
+      #mainwrapper #leftcontent #threecol2 .threepost {
+        height: 150px;
+        overflow: hidden;
+        padding: 0px 1%;
+        width: 48%; }
+        #mainwrapper #leftcontent #threecol .threepost h2,
+        #mainwrapper #leftcontent #threecol2 .threepost h2 {
+          font-size: 150%;
+          text-align: center; }
+      #mainwrapper #leftcontent #threecol .threepost2,
+      #mainwrapper #leftcontent #threecol .threepost5,
+      #mainwrapper #leftcontent #threecol2 .threepost2,
+      #mainwrapper #leftcontent #threecol2 .threepost5 {
+        margin: 0px; }
 
 .home #leftcontent img {
   max-width: 100%; }
@@ -271,7 +297,7 @@ h3,
 h4,
 h5 {
   margin: 2px 1%;
-  padding: 5px 1%;
+  padding: 3px 1%;
   border: 2px solid ridge;
   border-radius: 3px;
   background: #807d7e;
@@ -284,6 +310,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+body {
+  background: none !important; }
+
 img {
   border: 0; }
 
@@ -293,7 +322,7 @@ html {
   font-family: "Verdana", "Geneva", sans-serif;
   font-size: 14px;
   margin: auto;
-  padding: 32px 0px 65px 0px;
+  padding: 35px 0px 35px 0px;
   width: 95% !important; }
 
 span.type {

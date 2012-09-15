@@ -31,13 +31,21 @@
 	{	@include	border;
 
 		background:	$colSecondary;
+		border-width:	0px;
 		padding:	0px;
 		width:		100%;
 
 		#sform
 		{	padding:	0px;
 			width:		100%;
-}	}	}
+		}	
+
+		#wp-calendar
+		{	width:	100%;
+
+			td
+			{	text-align:	left;
+}	}	}	}
 
 #mainwrapper	#sidebar
 {	float:	left;
