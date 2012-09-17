@@ -11,14 +11,13 @@ $nPageID	=	get_the_ID();
 
 <div class="posts">
 <?php the_content(); ?>
-<?php smalls_cc_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 </div>
 
 <?php
 endwhile;
 endif;
 
-/*
 $aryPages	=	$wpdb -> get_results(	
 	"SELECT	smalls_cc_posts.post_title,
 		smalls_cc_posts.post_content,
@@ -29,7 +28,6 @@ $aryPages	=	$wpdb -> get_results(
 	AND	smalls_cc_posts.post_type	=	'page'	
 	AND	smalls_cc_posts.post_status	=	'publish'"
 						);
-var_dump($aryPages);
 
 foreach(	$aryPages as $objPage	)
 {	$szTitle	=	$objPage -> post_title;
@@ -54,7 +52,6 @@ foreach(	$aryPages as $objPage	)
 			<h4>	$szTitle	</h4>
 		</div>	</a>";	
 }
- */
 
 flush();
 get_footer();

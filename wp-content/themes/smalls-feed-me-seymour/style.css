@@ -90,19 +90,24 @@
 
 div.front-block {
   margin: 2px 1%;
-  background: #ffffff;
-  border: 2px	#ffffff	groove;
-  border-radius: 1% 1% 1% 1%;
+  padding: 3px 1%;
+  border: 2px solid ridge;
+  border-radius: 3px;
   float: left;
   height: 200px;
-  width: 45%; }
+  padding: 0px;
+  width: 48%; }
   div.front-block h1,
   div.front-block h2,
   div.front-block h3,
   div.front-block h4,
   div.front-block h5,
   div.front-block h6 {
-    border: none; }
+    border: none;
+    font-size: 200%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; }
 
 #mainwrapper #sidebar,
 #mainwrapper #secondsidebar {
@@ -301,7 +306,8 @@ h5 {
   border: 2px solid ridge;
   border-radius: 3px;
   background: #807d7e;
-  color: #221f20; }
+  color: #ffffff;
+  margin: 0px; }
 
 a {
   text-decoration: none;

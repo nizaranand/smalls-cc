@@ -1,8 +1,7 @@
 #!/bin/sh
 
-sass	--update	.
-cp	-ru		../wordpress/*	.
-wait
+sass	--update	.			&&
+cp	-ru		../wordpress/*	.	&&
 git add	-A	
 	
 #my $remote_filename = '/var/log/nginx/smalls.cc-error_log';

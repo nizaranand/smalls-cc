@@ -1,12 +1,11 @@
 div.front-block
-{	@include			margin;
+{	@include	border;
 
-	background:		#ffffff;
-	border:			2px	#ffffff	groove;
-	border-radius:	$nMargin-Sides	$nMargin-Sides	$nMargin-Sides	$nMargin-Sides;
-	float:			left;
-	height:			200px;
-	width:			45%;
+	float:		left;
+	height:		200px;
+	padding:	0px;
+	width:		50%
+			- (	2 * $nMargin-Sides	);
 
 	h1,
 	h2,
@@ -14,5 +13,9 @@ div.front-block
 	h4,
 	h5,
 	h6
-	{	border:	none;
+	{	border:		none;
+		font-size:	200%;
+		margin:		0px;
+		padding:	0px;
+		text-align:	center;
 }	}
