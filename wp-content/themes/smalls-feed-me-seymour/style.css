@@ -138,7 +138,7 @@ div.front-block {
     padding: 3px 1%;
     border: 2px solid ridge;
     border-radius: 3px;
-    background: #6fa537;
+    background: #ffffff;
     border-width: 0px;
     padding: 0px;
     width: 100%; }
@@ -280,7 +280,7 @@ table.contact {
         width: 48%; }
         #mainwrapper #leftcontent #threecol .threepost h2,
         #mainwrapper #leftcontent #threecol2 .threepost h2 {
-          font-size: 150%;
+          font-size: 140%;
           text-align: center; }
       #mainwrapper #leftcontent #threecol .threepost2,
       #mainwrapper #leftcontent #threecol .threepost5,
