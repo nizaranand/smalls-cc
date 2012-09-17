@@ -11,35 +11,36 @@ while(	have_posts()	) :
 
 		<div class="posts">
 			<?php the_content(); ?>
-   			<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+   			<?php smalls_cc_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 		</div>
 
 <?php
 endwhile;
 endif;
 
-/*
 $aryPages	=	$wpdb -> get_results(	
-	"SELECT	wp_posts.post_title,
-		wp_posts.post_content,
-		wp_posts.guid,
-		wp_posts.ID
-	FROM	wp_posts
-	WHERE	wp_posts.post_parent	=	227
-	AND	wp_posts.post_type	=	'page'	
-	AND	wp_posts.post_status	=	'publish'"
+	"SELECT	smalls_cc_posts.post_title,
+		smalls_cc_posts.post_content,
+		smalls_cc_posts.guid,
+		smalls_cc_posts.ID
+	FROM	smalls_cc_posts
+	WHERE	smalls_cc_posts.post_parent	=	227
+	AND	smalls_cc_posts.post_type	=	'page'	
+	AND	smalls_cc_posts.post_status	=	'publish'"
 						);
+var_dump($aryPages);
 
+/*
 foreach(	$aryPages as $objPage	)
 {	$szTitle	=	$objPage -> post_title;
 	$szContent	=	$objPage -> post_content;
 	$szURI		=	$objPage -> guid;
 	$nID		=	$objPage -> ID;
 	$aryImages	=	$wpdb -> get_results(	
-		"SELECT	wp_posts.guid
-		FROM	wp_posts
-		WHERE	wp_posts.post_type	=	'attachment'
-		AND	wp_posts.post_parent	=	$nID"
+		"SELECT	smalls_cc_posts.guid
+		FROM	smalls_cc_posts
+		WHERE	smalls_cc_posts.post_type	=	'attachment'
+		AND	smalls_cc_posts.post_parent	=	$nID"
 							);
 	$szImageURI	=	$aryImages[ rand(	0,
 							count(	$aryImages	) - 1
