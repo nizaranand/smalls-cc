@@ -3,13 +3,20 @@
 */
 get_header();
 
-if(	have_posts()	);
-while(	have_posts()	):
+if(	have_posts()	) :
+while(	have_posts()	) :
 	the_post();
-	the_content();
+?>
+		<h1 class="catheader"><?php the_title(); ?></h1>
+
+		<div class="posts">
+			<?php the_content(); ?>
+   			<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+		</div>
+
+<?php
 endwhile;
 endif;
-echo 'charlie murphy';
 
 /*
 $aryPages	=	$wpdb -> get_results(	
