@@ -91,7 +91,7 @@
 div.front-block {
   margin: 2px 1%;
   padding: 3px 1%;
-  border: 2px solid ridge;
+  border: 1px ridge;
   border-radius: 3px;
   float: left;
   height: 200px;
@@ -141,7 +141,7 @@ div.front-block {
   #mainwrapper #secondsidebar .side-widget {
     margin: 2px 1%;
     padding: 3px 1%;
-    border: 2px solid ridge;
+    border: 1px ridge;
     border-radius: 3px;
     background: #ffffff;
     border-width: 0px;
@@ -262,15 +262,14 @@ table.contact {
           #mainwrapper #leftcontent .page-division ul li .type {
             text-align: left; }
     #mainwrapper #leftcontent .post-excerpt {
-      padding: 3px 1%;
       float: left;
-      text-align: justify;
-      width: 58%; }
+      text-align: justify; }
       #mainwrapper #leftcontent .post-excerpt h1,
       #mainwrapper #leftcontent .post-excerpt h2,
       #mainwrapper #leftcontent .post-excerpt h3,
       #mainwrapper #leftcontent .post-excerpt h4,
-      #mainwrapper #leftcontent .post-excerpt h5 {
+      #mainwrapper #leftcontent .post-excerpt h5,
+      #mainwrapper #leftcontent .post-excerpt h6 {
         background: #6fa537;
         margin-top: 10px; }
     #mainwrapper #leftcontent #threecol,
@@ -300,10 +299,11 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin: 2px 1%;
   padding: 3px 1%;
-  border: 2px solid ridge;
+  border: 1px ridge;
   border-radius: 3px;
   background: #807d7e;
   color: #ffffff;

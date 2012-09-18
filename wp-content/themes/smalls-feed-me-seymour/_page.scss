@@ -75,17 +75,15 @@
 		}	}	}	}
 		
 		.post-excerpt
-		{	@include		padding;
-
-			float:		left;
+		{	float:		left;
 			text-align:	justify;
-			width:		58%;
 			
 			h1,
 			h2,
 			h3,
 			h4,
-			h5
+			h5,
+			h6
 			{	background:	$colSecondary;
 				margin-top:	10px;
 		}	}

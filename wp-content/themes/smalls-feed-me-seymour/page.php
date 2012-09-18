@@ -6,7 +6,6 @@
 			<?php the_content(); ?>
    			<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages', "feed-me-seymour").':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 		</div>
-       	<?php comments_template(); ?>
 
 	<?php endwhile; endif; ?>
 <?php get_footer(); ?>

@@ -26,8 +26,7 @@ $nPadding-Vertical:	3px;
 {	@include	margin;
 	@include	padding;
 
-	border:		2px
-			solid
+	border:		1px
 			ridge;
 		border-radius:	3px;
 }
@@ -54,7 +53,8 @@ h1,
 h2,
 h3,
 h4,
-h5
+h5,
+h6
 {	@include	border;
 	
 	background:	$colTertiary;
