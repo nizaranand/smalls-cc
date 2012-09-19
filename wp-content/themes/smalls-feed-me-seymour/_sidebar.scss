@@ -35,6 +35,17 @@
 		padding:	0px;
 		width:		100%;
 
+		.children
+		{	.children
+			{	display:	none;
+			}
+
+			.page_item
+			{	border-bottom:	dotted
+						1px
+						$colPrimary;
+		}	}
+
 		#sform
 		{	padding:	0px;
 			width:		100%;
@@ -53,4 +64,9 @@
 
 #mainwrapper	#secondsidebar
 {	float:	right;
-}
+
+	.side-widget	ul	li
+	{	border-bottom:	dotted
+				1px
+				$colPrimary;
+}	}

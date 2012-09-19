@@ -96,7 +96,7 @@ div.front-block {
   float: left;
   height: 200px;
   padding: 0px;
-  width: 48%; }
+  width: 47%; }
   div.front-block h1,
   div.front-block h2,
   div.front-block h3,
@@ -147,6 +147,12 @@ div.front-block {
     border-width: 0px;
     padding: 0px;
     width: 100%; }
+    #mainwrapper #sidebar .side-widget .children .children,
+    #mainwrapper #secondsidebar .side-widget .children .children {
+      display: none; }
+    #mainwrapper #sidebar .side-widget .children .page_item,
+    #mainwrapper #secondsidebar .side-widget .children .page_item {
+      border-bottom: dotted 1px #221f20; }
     #mainwrapper #sidebar .side-widget #sform,
     #mainwrapper #secondsidebar .side-widget #sform {
       padding: 0px;
@@ -163,6 +169,8 @@ div.front-block {
 
 #mainwrapper #secondsidebar {
   float: right; }
+  #mainwrapper #secondsidebar .side-widget ul li {
+    border-bottom: dotted 1px #221f20; }
 
 table.contact {
   background-color: #6fa537;
@@ -246,6 +254,10 @@ table.contact {
       border-radius: 10px;
       list-style: disc inside;
       margin-bottom: 0px; }
+    #mainwrapper #leftcontent .posts h2 {
+      background-color: #6fa537; }
+    #mainwrapper #leftcontent .posts p {
+      margin: 0px 0px 10px 0px; }
     #mainwrapper #leftcontent .page-division {
       margin: 2px 1%;
       float: left;
@@ -307,7 +319,11 @@ h6 {
   border-radius: 3px;
   background: #807d7e;
   color: #ffffff;
-  margin: 0px; }
+  margin: 0px 0px 10px 0px;
+  text-align: center; }
+
+h2 {
+  font-size: 150%; }
 
 a {
   text-decoration: none;

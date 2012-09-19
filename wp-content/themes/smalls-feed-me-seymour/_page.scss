@@ -47,6 +47,18 @@
 			margin-bottom:	0px;
 		}
 
+		.posts
+		{	h2
+			{	background-color:	$colSecondary;
+			}
+			
+			p
+			{	margin:	0px
+					0px
+					10px
+					0px;
+		}	}
+
 		.page-division
 		{	@include	margin;
 
