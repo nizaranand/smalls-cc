@@ -36,15 +36,18 @@
 		{	height:		500px;
 		}
 
+		.catheader,
+		h1
+		{	background:	$colSecondary;
+			color:		#ffffff;
+		}
+
 		.post	li
-		{	@include	margin;
-			@include	padding;
+		{	@include	border;
 				
-			background:	$colTertiary;
-			border-radius:	10px;
-			list-style:	disc
-						inside;
-			margin-bottom:	0px;
+			background:	#ffffff;
+			color:		$colPrimary;
+			list-style:	none;
 		}
 
 		.posts

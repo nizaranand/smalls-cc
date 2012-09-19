@@ -66,6 +66,10 @@ h6
 	text-align:	center;
 }
 
+h1
+{	font-size:	200%;
+}
+
 h2
 {	font-size:	150%;
 }
@@ -391,6 +395,8 @@ ul.cats
 	
 
 /* Other Elements */
+/*	jonathan@smalls.cc	2012 September 20
+	-	conflicts with custom style
 
 #leftcontent h1.catheader {
 	margin: 10px 0 10px;
@@ -402,6 +408,7 @@ ul.cats
 		color: #0077AA;
 		margin-top: 10px;
 		}
+*/
 
 .red, a.red .entry a {
 	color: #E06110;
