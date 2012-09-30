@@ -3,8 +3,8 @@
 sass	--update	.
 wait
 cp	-ru		../wordpress/*	.
-git add	-A	
-	
+git add	-A
+
 #my $remote_filename = '/var/log/nginx/smalls.cc-error_log';
 #my $remote_host = 'ec2-user@smalls.cc';
 #my $cmd = "ssh $remote_host tail -f $remote_filename |";

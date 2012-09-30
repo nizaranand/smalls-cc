@@ -1,4 +1,6 @@
 <?php
+include	'includes/SetTables().php';
+
 // Set up Feed Me, Seymour information
 $bavotasan_theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
 define('THEME_NAME', $bavotasan_theme_data['Name']);

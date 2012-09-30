@@ -6,7 +6,7 @@ get_header();
 if(	have_posts()	) :
 while(	have_posts()	) :
 	the_post();
-$nPageID	=	get_the_ID();
+	$nPageID	=	get_the_ID();
 ?>
 
 <div class="posts">
@@ -18,15 +18,19 @@ $nPageID	=	get_the_ID();
 endwhile;
 endif;
 
+$aryTables	=	SetTables();
+extract(	$aryTables	);
+global	$wpdb;
+
 $aryPages	=	$wpdb -> get_results(	
-	"SELECT	smalls_cc_posts.post_title,
-		smalls_cc_posts.post_content,
-		smalls_cc_posts.guid,
-		smalls_cc_posts.ID
-	FROM	smalls_cc_posts
-	WHERE	smalls_cc_posts.post_parent	=	$nPageID
-	AND	smalls_cc_posts.post_type	=	'page'	
-	AND	smalls_cc_posts.post_status	=	'publish'"
+	"SELECT	$tblPosts.post_title,
+		$tblPosts.post_content,
+		$tblPosts.guid,
+		$tblPosts.ID
+	FROM	$tblPosts
+	WHERE	$tblPosts.post_parent	=	$nPageID
+	AND	$tblPosts.post_type	=	'page'	
+	AND	$tblPosts.post_status	=	'publish'"
 						);
 
 foreach(	$aryPages as $objPage	)
@@ -35,10 +39,10 @@ foreach(	$aryPages as $objPage	)
 	$szURI		=	$objPage -> guid;
 	$nID		=	$objPage -> ID;
 	$aryImages	=	$wpdb -> get_results(	
-		"SELECT	smalls_cc_posts.guid
-		FROM	smalls_cc_posts
-		WHERE	smalls_cc_posts.post_type	=	'attachment'
-		AND	smalls_cc_posts.post_parent	=	$nID"
+		"SELECT	$tblPosts.guid
+		FROM	$tblPosts
+		WHERE	$tblPosts.post_type	=	'attachment'
+		AND	$tblPosts.post_parent	=	$nID"
 							);
 	$szImageURI	=	$aryImages[ rand(	0,
 							count(	$aryImages	) - 1

@@ -93,6 +93,8 @@ div.front-block {
   padding: 3px 1%;
   border: 1px ridge;
   border-radius: 3px;
+  background: #ffffff;
+  background-size: cover;
   float: left;
   height: 200px;
   padding: 0px;
@@ -247,6 +249,8 @@ table.contact {
       width: 100%; }
     #mainwrapper #leftcontent iframe {
       height: 500px; }
+    #mainwrapper #leftcontent #secondsidebar {
+      width: 50%; }
     #mainwrapper #leftcontent .catheader,
     #mainwrapper #leftcontent h1 {
       background: #6fa537;
@@ -280,7 +284,8 @@ table.contact {
             text-align: left; }
     #mainwrapper #leftcontent .post-excerpt {
       float: left;
-      text-align: justify; }
+      text-align: justify;
+      width: 49%; }
       #mainwrapper #leftcontent .post-excerpt h1,
       #mainwrapper #leftcontent .post-excerpt h2,
       #mainwrapper #leftcontent .post-excerpt h3,

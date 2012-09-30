@@ -36,6 +36,10 @@
 		{	height:		500px;
 		}
 
+		#secondsidebar
+		{	width:	50%;
+		}
+		
 		.catheader,
 		h1
 		{	background:	$colSecondary;
@@ -92,6 +96,7 @@
 		.post-excerpt
 		{	float:		left;
 			text-align:	justify;
+			width:		49%;
 			
 			h1,
 			h2,
