@@ -269,13 +269,14 @@ table.contact {
       margin: 0px 0px 10px 0px; }
     #mainwrapper #leftcontent .page-division {
       margin: 2px 1%;
-      float: left;
-      width: 48%; }
+      display: inline-block;
+      width: 47%; }
+      #mainwrapper #leftcontent .page-division p {
+        height: 160px; }
       #mainwrapper #leftcontent .page-division ul {
-        width: 100%;
-        margin-top: 10px; }
+        width: 100%; }
         #mainwrapper #leftcontent .page-division ul li {
-          padding: 3px 0px 3px 0px; }
+          padding: 3px 0px; }
           #mainwrapper #leftcontent .page-division ul li span {
             display: inline-block;
             text-align: right;

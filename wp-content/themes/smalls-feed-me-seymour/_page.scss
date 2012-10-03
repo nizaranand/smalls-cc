@@ -69,18 +69,19 @@
 		.page-division
 		{	@include	margin;
 
-			float:		left;
-			width:		50%
+			display:	inline-block;
+			width:		49%
 					- (	2 * $nMargin-Sides	);
+
+			p
+			{	height:	160px;
+			}
 
 			ul
 			{	width:		100%;
-				margin-top:	10px;
 				
 				li
 				{	padding:	$nPadding-Vertical
-							0px
-							$nPadding-Vertical
 							0px;
 					
 					span
