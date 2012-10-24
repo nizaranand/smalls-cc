@@ -7,26 +7,30 @@ $colTertiary:	#807D7E;
 $colText:	#ffffff;
 $colLink_Hover:	#E06110;
 
-$nMargin-Sides:		1%;
-$nMargin-Vertical:	2px;
-$nPadding-Sides:	1%;
-$nPadding-Vertical:	3px;
+$nMargin-Width:		1%;
+$nMargin-Height:	2px;
+$nPadding-Width:	1%;
+$nPadding-Height:	3px;
+
+$nBorder-Width:	1px;
+
+$nFont-Size:	15px;
 
 @mixin	margin	
-{	margin:	$nMargin-Vertical
-		$nMargin-Sides;
+{	margin:	$nMargin-Height
+		$nMargin-Width;
 }
 
 @mixin	padding
-{	padding:	$nPadding-Vertical
-			$nPadding-Sides;
+{	padding:	$nPadding-Height
+			$nPadding-Width;
 }
 
 @mixin	border
 {	@include	margin;
 	@include	padding;
 
-	border:		1px
+	border:		$nBorder-Width
 			ridge;
 		border-radius:	3px;
 }
@@ -86,6 +90,7 @@ a
 body
 {	background:	none
 			!important;
+	font-size:	$nFont-Size;
 }
 	
 img
@@ -109,6 +114,7 @@ html
 			0px;
 	width:		95%
 			!important;
+		max-width:	1200px;
 }
 					
 span.type

@@ -3,11 +3,13 @@ div.front-block
 
 	background:	#ffffff;
 		background-size:	cover;
-	float:		left;
+		background-position:	0%
+					20%;
 	height:		200px;
-	padding:	0px;
-	width:		49%
-			- (	2 * $nMargin-Sides	);
+	margin:		3 * $nMargin-Height
+			auto;
+	width:		100%
+			- (	2 * $nMargin-Width	);
 
 	h1,
 	h2,

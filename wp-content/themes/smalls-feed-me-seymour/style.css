@@ -15,7 +15,7 @@
     color: #ffffff;
     float: none;
     font-weight: 600;
-    padding: 0px 1% 0px 1%;
+    padding: 0px 1%;
     text-align: center;
     text-shadow: 0px 0px 5px black;
     width: 290px; }
@@ -95,10 +95,10 @@ div.front-block {
   border-radius: 3px;
   background: #ffffff;
   background-size: cover;
-  float: left;
+  background-position: 0% 20%;
   height: 200px;
-  padding: 0px;
-  width: 47%; }
+  margin: 6px auto;
+  width: 98%; }
   div.front-block h1,
   div.front-block h2,
   div.front-block h3,
@@ -148,6 +148,7 @@ div.front-block {
     background: #ffffff;
     border-width: 0px;
     padding: 0px;
+    margin: auto 2%;
     width: 100%; }
     #mainwrapper #sidebar .side-widget .children .children,
     #mainwrapper #secondsidebar .side-widget .children .children {
@@ -166,12 +167,11 @@ div.front-block {
       #mainwrapper #secondsidebar .side-widget #wp-calendar td {
         text-align: left; }
 
+#mainwrapper #secondsidebar,
 #mainwrapper #sidebar {
-  float: left; }
-
-#mainwrapper #secondsidebar {
   float: right; }
-  #mainwrapper #secondsidebar .side-widget ul li {
+  #mainwrapper #secondsidebar .side-widget ul li,
+  #mainwrapper #sidebar .side-widget ul li {
     border-bottom: dotted 1px #221f20; }
 
 table.contact {
@@ -233,12 +233,9 @@ table.contact {
   float: left;
   padding: 0px; }
   #mainwrapper #leftcontent {
-    float: left;
-    padding: 0px 2px 0px 2px;
-    position: relative;
-    left: 1%;
+    display: inline-block;
     text-align: justify;
-    width: 60%; }
+    width: 62%; }
     #mainwrapper #leftcontent h2 a {
       color: #ffffff;
       display: inline-block; }
@@ -263,10 +260,17 @@ table.contact {
       background: #ffffff;
       color: #221f20;
       list-style: none; }
-    #mainwrapper #leftcontent .posts h2 {
-      background-color: #6fa537; }
-    #mainwrapper #leftcontent .posts p {
-      margin: 0px 0px 10px 0px; }
+    #mainwrapper #leftcontent .posts {
+      margin: 2px 1%;
+      padding: 3px 1%;
+      border: 1px ridge;
+      border-radius: 3px;
+      background: #ffffff;
+      margin: 0px; }
+      #mainwrapper #leftcontent .posts h2 {
+        background-color: #6fa537; }
+      #mainwrapper #leftcontent .posts p {
+        margin: 0px 0px 10px 0px; }
     #mainwrapper #leftcontent .page-division {
       margin: 2px 1%;
       display: inline-block;
@@ -347,7 +351,8 @@ a {
     text-decoration: underline; }
 
 body {
-  background: none !important; }
+  background: none !important;
+  font-size: 15px; }
 
 img {
   border: 0; }
@@ -359,7 +364,8 @@ html {
   font-size: 14px;
   margin: auto;
   padding: 35px 0px 35px 0px;
-  width: 95% !important; }
+  width: 95% !important;
+  max-width: 1200px; }
 
 span.type {
   background: #6fa537;

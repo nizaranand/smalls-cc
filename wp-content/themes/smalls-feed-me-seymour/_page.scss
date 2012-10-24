@@ -8,17 +8,10 @@
 	padding:	0px;
 
 	#leftcontent
-	{	float:		left;
-		padding:	0px
-				2px
-				0px
-				2px;
-		position:	relative;
-			left:	1%;
+	{	display:	inline-block;
 		text-align:	justify;
 		width:		100%
-				- (	2 * 19%	)
-				- (	2 * $nMargin-Sides	);
+				- (	2 * 19%	);
 	
 		h2	a
 		{	color:		#ffffff;
@@ -55,7 +48,12 @@
 		}
 
 		.posts
-		{	h2
+		{	@include	border;
+
+			background:	#ffffff;
+			margin:		0px;
+		
+			h2
 			{	background-color:	$colSecondary;
 			}
 			
@@ -71,7 +69,7 @@
 
 			display:	inline-block;
 			width:		49%
-					- (	2 * $nMargin-Sides	);
+					- (	2 * $nMargin-Width	);
 
 			p
 			{	height:	160px;
@@ -81,7 +79,7 @@
 			{	width:		100%;
 				
 				li
-				{	padding:	$nPadding-Vertical
+				{	padding:	$nPadding-Height
 							0px;
 					
 					span
@@ -118,9 +116,9 @@
 			{	height:		150px;
 				overflow:	hidden;
 				padding:	0px
-						$nPadding-Sides;
+						$nPadding-Width;
 				width:		50%
-						- (	2 * $nPadding-Sides	);
+						- (	2 * $nPadding-Width	);
 
 				h2
 				{	font-size:	140%;

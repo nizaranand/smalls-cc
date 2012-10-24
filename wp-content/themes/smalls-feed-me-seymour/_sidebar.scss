@@ -33,6 +33,8 @@
 		background:	#ffffff;
 		border-width:	0px;
 		padding:	0px;
+		margin:		auto
+				(	2 * $nMargin-Width	);
 		width:		100%;
 
 		.children
@@ -58,11 +60,8 @@
 			{	text-align:	left;
 }	}	}	}
 
+#mainwrapper	#secondsidebar,
 #mainwrapper	#sidebar
-{	float:	left;
-}
-
-#mainwrapper	#secondsidebar
 {	float:	right;
 
 	.side-widget	ul	li

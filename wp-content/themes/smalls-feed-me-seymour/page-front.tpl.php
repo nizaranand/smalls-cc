@@ -22,7 +22,7 @@ $aryTables	=	SetTables();
 extract(	$aryTables	);
 global	$wpdb;
 
-$aryPages	=	$wpdb -> get_results(	
+$aryPages	=	$wpdb -> get_results(
 	"SELECT	$tblPosts.post_title,
 		$tblPosts.post_content,
 		$tblPosts.guid,
@@ -38,7 +38,7 @@ foreach(	$aryPages as $objPage	)
 	$szContent	=	$objPage -> post_content;
 	$szURI		=	$objPage -> guid;
 	$nID		=	$objPage -> ID;
-	$aryImages	=	$wpdb -> get_results(	
+	$aryImages	=	$wpdb -> get_results(
 		"SELECT	$tblPosts.guid
 		FROM	$tblPosts
 		WHERE	$tblPosts.post_type	=	'attachment'
