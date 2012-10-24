@@ -3,6 +3,7 @@
 */
 get_header();
 
+echo	"<div	class	=	'page-front'	>";
 if(	have_posts()	) :
 while(	have_posts()	) :
 	the_post();
@@ -17,6 +18,7 @@ while(	have_posts()	) :
 <?php
 endwhile;
 endif;
+echo	"</div>";
 
 $aryTables	=	SetTables();
 extract(	$aryTables	);

@@ -35,7 +35,8 @@
 		padding:	0px;
 		margin:		auto
 				(	2 * $nMargin-Width	);
-		width:		100%;
+		width:		100%
+				- (	2 * $nMargin-Width	);
 
 		.children
 		{	.children

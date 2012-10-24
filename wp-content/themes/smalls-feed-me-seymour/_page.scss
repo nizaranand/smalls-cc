@@ -30,7 +30,9 @@
 		}
 
 		#secondsidebar
-		{	width:	50%;
+		{	position:	relative;
+				right:	1%;
+			width:		46%;
 		}
 		
 		.catheader,
@@ -51,7 +53,10 @@
 		{	@include	border;
 
 			background:	#ffffff;
+			color:		$colPrimary;
+			display:	inline-block;
 			margin:		0px;
+			width:		50%;
 		
 			h2
 			{	background-color:	$colSecondary;
@@ -62,6 +67,10 @@
 					0px
 					10px
 					0px;
+			}
+
+			.post-excerpt
+			{	width:	100%;
 		}	}
 
 		.page-division

@@ -88,7 +88,10 @@
   text-align: center;
   clear: both; }
 
-div.front-block {
+#mainwrapper #leftcontent .page-front .posts {
+  width: 98%; }
+
+.front-block {
   margin: 2px 1%;
   padding: 3px 1%;
   border: 1px ridge;
@@ -99,12 +102,12 @@ div.front-block {
   height: 200px;
   margin: 6px auto;
   width: 98%; }
-  div.front-block h1,
-  div.front-block h2,
-  div.front-block h3,
-  div.front-block h4,
-  div.front-block h5,
-  div.front-block h6 {
+  .front-block h1,
+  .front-block h2,
+  .front-block h3,
+  .front-block h4,
+  .front-block h5,
+  .front-block h6 {
     border: none;
     font-size: 200%;
     margin: 0px;
@@ -149,7 +152,7 @@ div.front-block {
     border-width: 0px;
     padding: 0px;
     margin: auto 2%;
-    width: 100%; }
+    width: 98%; }
     #mainwrapper #sidebar .side-widget .children .children,
     #mainwrapper #secondsidebar .side-widget .children .children {
       display: none; }
@@ -247,7 +250,9 @@ table.contact {
     #mainwrapper #leftcontent iframe {
       height: 500px; }
     #mainwrapper #leftcontent #secondsidebar {
-      width: 50%; }
+      position: relative;
+      right: 1%;
+      width: 46%; }
     #mainwrapper #leftcontent .catheader,
     #mainwrapper #leftcontent h1 {
       background: #6fa537;
@@ -266,11 +271,16 @@ table.contact {
       border: 1px ridge;
       border-radius: 3px;
       background: #ffffff;
-      margin: 0px; }
+      color: #221f20;
+      display: inline-block;
+      margin: 0px;
+      width: 50%; }
       #mainwrapper #leftcontent .posts h2 {
         background-color: #6fa537; }
       #mainwrapper #leftcontent .posts p {
         margin: 0px 0px 10px 0px; }
+      #mainwrapper #leftcontent .posts .post-excerpt {
+        width: 100%; }
     #mainwrapper #leftcontent .page-division {
       margin: 2px 1%;
       display: inline-block;
