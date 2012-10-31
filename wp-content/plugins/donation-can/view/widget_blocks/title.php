@@ -1,1 +1,0 @@
-<h3 class="donation-widget-title"><?php echo $title; ?></h3>

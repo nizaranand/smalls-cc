@@ -1,1 +1,0 @@
-<div class="custom-text"><?php echo $text; ?></div>
