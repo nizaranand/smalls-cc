@@ -32,8 +32,9 @@
 
 		background:	#ffffff;
 		border-width:	0px;
+		height:		8 * $nGrid-Height;
 		padding:	0px;
-		margin:		auto
+		margin:		$nMargin-Height
 				(	2 * $nMargin-Width	);
 		width:		100%
 				- (	2 * $nMargin-Width	);
@@ -48,6 +49,10 @@
 						1px
 						$colPrimary;
 		}	}
+
+		.page-item-327
+		{	display:	none;
+		}
 
 		#sform
 		{	padding:	0px;

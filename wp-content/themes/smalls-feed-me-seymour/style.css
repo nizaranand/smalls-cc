@@ -1,5 +1,22 @@
 @import url(//yui.yahooapis.com/2.9.0/build/reset-fonts-grids/reset-fonts-grids.css);
 /*	Theme Name: Smalls - Feed Me, Seymour	*/
+/*	$colPrimary:	#221F20;
+	$colSecondary:	#6FA537;
+	$colTertiary:	#807D7E;
+	$colText:	#ffffff;
+	$colLink_Hover:	#E06110;
+
+	$nGrid-Width:		2%;
+	$nGrid-Height:		20px;
+	$nMargin-Width:		$nGrid-Width / 2;
+	$nMargin-Height:	$nGrid-Height / 10;
+	$nPadding-Width:	$nGrid-Width / 2;
+	$nPadding-Height:	$nGrid-Height / 10;
+
+	$nBorder-Width:	1px;
+
+	$nFont-Size:	15px;
+*/
 #login {
   display: none; }
 
@@ -89,18 +106,19 @@
   clear: both; }
 
 #mainwrapper #leftcontent .page-front .posts {
+  height: 340px;
   width: 98%; }
 
 .front-block {
   margin: 2px 1%;
-  padding: 3px 1%;
+  padding: 2px 1%;
   border: 1px ridge;
   border-radius: 3px;
   background: #ffffff;
   background-size: cover;
   background-position: 0% 20%;
   height: 200px;
-  margin: 6px auto;
+  margin: 0px auto;
   width: 98%; }
   .front-block h1,
   .front-block h2,
@@ -145,13 +163,14 @@
   #mainwrapper #sidebar .side-widget,
   #mainwrapper #secondsidebar .side-widget {
     margin: 2px 1%;
-    padding: 3px 1%;
+    padding: 2px 1%;
     border: 1px ridge;
     border-radius: 3px;
     background: #ffffff;
     border-width: 0px;
+    height: 160px;
     padding: 0px;
-    margin: auto 2%;
+    margin: 2px 2%;
     width: 98%; }
     #mainwrapper #sidebar .side-widget .children .children,
     #mainwrapper #secondsidebar .side-widget .children .children {
@@ -159,6 +178,9 @@
     #mainwrapper #sidebar .side-widget .children .page_item,
     #mainwrapper #secondsidebar .side-widget .children .page_item {
       border-bottom: dotted 1px #221f20; }
+    #mainwrapper #sidebar .side-widget .page-item-327,
+    #mainwrapper #secondsidebar .side-widget .page-item-327 {
+      display: none; }
     #mainwrapper #sidebar .side-widget #sform,
     #mainwrapper #secondsidebar .side-widget #sform {
       padding: 0px;
@@ -210,7 +232,7 @@ table.contact {
     color: #0077AA; }
 
 #menu-top-navigation {
-  padding: 3px 1%;
+  padding: 2px 1%;
   background: #ffffff;
   border-bottom: 2px ridge #807d7e;
   display: inline;
@@ -221,7 +243,7 @@ table.contact {
   left: 0px;
   width: 100%; }
   #menu-top-navigation li {
-    padding: 3px 1%;
+    padding: 2px 1%;
     display: inline;
     text-align: center; }
     #menu-top-navigation li a {
@@ -234,7 +256,8 @@ table.contact {
 
 #mainwrapper {
   float: left;
-  padding: 0px; }
+  padding: 0px;
+  width: 100%; }
   #mainwrapper #leftcontent {
     display: inline-block;
     text-align: justify;
@@ -252,29 +275,29 @@ table.contact {
     #mainwrapper #leftcontent #secondsidebar {
       position: relative;
       right: 1%;
-      width: 46%; }
+      width: 36%; }
     #mainwrapper #leftcontent .catheader,
     #mainwrapper #leftcontent h1 {
       background: #6fa537;
       color: #ffffff; }
     #mainwrapper #leftcontent .post li {
       margin: 2px 1%;
-      padding: 3px 1%;
+      padding: 2px 1%;
       border: 1px ridge;
       border-radius: 3px;
-      background: #ffffff;
-      color: #221f20;
+      background: #6fa537;
+      color: #ffffff;
       list-style: none; }
     #mainwrapper #leftcontent .posts {
       margin: 2px 1%;
-      padding: 3px 1%;
+      padding: 2px 1%;
       border: 1px ridge;
       border-radius: 3px;
       background: #ffffff;
       color: #221f20;
       display: inline-block;
       margin: 0px;
-      width: 50%; }
+      width: 60%; }
       #mainwrapper #leftcontent .posts h2 {
         background-color: #6fa537; }
       #mainwrapper #leftcontent .posts p {
@@ -290,7 +313,7 @@ table.contact {
       #mainwrapper #leftcontent .page-division ul {
         width: 100%; }
         #mainwrapper #leftcontent .page-division ul li {
-          padding: 3px 0px; }
+          padding: 2px 0px; }
           #mainwrapper #leftcontent .page-division ul li span {
             display: inline-block;
             text-align: right;
@@ -328,6 +351,8 @@ table.contact {
       #mainwrapper #leftcontent #threecol2 .threepost2,
       #mainwrapper #leftcontent #threecol2 .threepost5 {
         margin: 0px; }
+    #mainwrapper #leftcontent .type-post {
+      width: 98%; }
 
 .home #leftcontent img {
   max-width: 100%; }
@@ -339,7 +364,7 @@ h4,
 h5,
 h6 {
   margin: 2px 1%;
-  padding: 3px 1%;
+  padding: 2px 1%;
   border: 1px ridge;
   border-radius: 3px;
   background: #807d7e;

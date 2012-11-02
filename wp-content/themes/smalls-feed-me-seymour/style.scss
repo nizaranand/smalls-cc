@@ -3,14 +3,15 @@
 $colPrimary:	#221F20;
 $colSecondary:	#6FA537;
 $colTertiary:	#807D7E;
-
 $colText:	#ffffff;
-$colLink_Hover:	#E06110;
+$colLink-Hover:	#E06110;
 
-$nMargin-Width:		1%;
-$nMargin-Height:	2px;
-$nPadding-Width:	1%;
-$nPadding-Height:	3px;
+$nGrid-Width:		2%;
+$nGrid-Height:		20px;
+$nMargin-Width:		$nGrid-Width / 2;
+$nMargin-Height:	$nGrid-Height / 10;
+$nPadding-Width:	$nGrid-Width / 2;
+$nPadding-Height:	$nGrid-Height / 10;
 
 $nBorder-Width:	1px;
 
@@ -45,7 +46,7 @@ $nFont-Size:	15px;
 	
 	&:hover
 	{	border-bottom:		3px
-					$colLink_Hover
+					$colLink-Hover
 					double;
 		text-decoration:	none;
 }	}

@@ -1,6 +1,7 @@
 <?php get_header();
 if (have_posts()) : while (have_posts()) : the_post();
 	$nPageID	=	get_the_ID();
+	$szTitle	=	strtolower(	get_the_title()	);
 ?>
 		<h1 class="catheader"><?php the_title(); ?></h1>
 
@@ -10,16 +11,17 @@ if (have_posts()) : while (have_posts()) : the_post();
 		</div>
 
 <?php
+
 endwhile;
 endif;
 
 $szATarget	=	'target	=	_blank';
 if(	true	==	is_page()	)
-{	$aryTables	=	SetTables();
-	extract(	$aryTables	);
+{	$aryTables	=	extract(	SetTables()	);
 	global	$wpdb;
 
 	$aryPages	=	$wpdb -> get_results(
+
 		"SELECT	$tblPosts.post_title,
 			$tblPosts.guid,
 			$tblPosts.ID,
@@ -59,8 +61,33 @@ if(	true	==	is_page()	)
 		}
 
 		echo	"</div>";
+	}
 
-}	}
+	$aryArticles	=	$wpdb -> get_results(
+		"SELECT	$tblPosts.post_title,
+			$tblPosts.post_content,
+			$tblPosts.guid
+		FROM	$tblPosts,
+			$tblTerms,
+			$tblRelationships
+		WHERE	$tblTerms.name		=	'$szTitle'
+		AND	$tblTerms.term_id	=	$tblRelationships.term_taxonomy_id
+		AND	$tblPosts.ID		=	$tblRelationships.object_id"
+							);
+	$nPosition	=	rand(	0,
+					count(	$aryArticles	) - 1
+					);
+	$szTitle	=	$aryArticles[ $nPosition ] -> post_title;
+	$szContent	=	$aryArticles[ $nPosition ] -> post_content;
+	$szURI		=	$aryArticles[ $nPosition ] -> guid;
+
+	echo	"<div	class	=	'posts'	>
+			<a	href	=	$szURI	>	<h4>
+				$szTitle
+			</h4> </a>
+			$szContent
+		</div>";
+}
 
 get_footer();
 ?>
