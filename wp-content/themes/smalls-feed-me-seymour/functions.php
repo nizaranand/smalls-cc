@@ -1,5 +1,6 @@
 <?php
 include	'includes/SetTables().php';
+include	'includes/JobListings().php';
 
 // Set up Feed Me, Seymour information
 $bavotasan_theme_data = get_theme_data(TEMPLATEPATH.'/style.css');
